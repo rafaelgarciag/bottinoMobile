@@ -1,0 +1,49 @@
+@import "./reticula.css"
+@import "./reset"
+@import "./normalize.css"
+
+
+$background = green
+
+header
+	height 100px
+	color #000
+	font-size 16px
+	font-family "caveat", cursive
+	padding 5px
+.lupa
+	img
+		width 30px
+		height 30px
+	margin-right 30px
+.shop
+		width 30px
+		height 30px
+.finder
+	border none
+
+@media (min-width: 400px)
+	.header
+		display flex
+	.bottinologo
+		flex-basis: 50%
+		max-width: 50%
+		padding-left 5px
+	.menubutton
+		margin-bottom 5px
+		order 2
+	.header2
+		margin-top 20px
+		flex-basis: 40%
+		max-width: 40%
+		justify-content: flex-end;
+		text-align: end;
+	.lupa
+		margin-bottom 5px
+		margin-right 0
+		width 80%
+	.finder
+		width 70%
+		height 100%
+	.shop
+		width 20%
