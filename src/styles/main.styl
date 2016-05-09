@@ -1,5 +1,5 @@
-@import "./reset"
 @import "./normalize.css"
+@import "./reset"
 @import "./header"
 
 body
@@ -20,25 +20,25 @@ body
 	&-mobile
 		display flex
 		justify-content space-between
+		align-items center
 		&-menu
+			width 25%
 			display flex
 			background-color yellow
 			order 1
+			justify-content space-around
+			&-title
+				width 50%
+				background-color purple
+				text-align center
+				margin 5% 0
 			&-button
-				
-			&-nav
-				background-color red
-				&-list
-					list-style-type none
-					height 0
-					width 0
-					overflow hidden
-					&-item
-						a
-							text-decoration none
-							color black
+				width 50%
+				background-color white
+				border-style none
 		&-choice
 			display flex
+			flex-wrap wrap
 			order 2
 			&-finder
 				display flex
@@ -48,11 +48,32 @@ body
 					order 2
 				&-box
 					order 1
+					margin-rigth 10%
 			&-marketcar
 				width 30px
 				height 30px
-
-	
+	&-nav
+		margin-top 10px
+		background-color #DCD8D8
+		&-list
+			list-style-type none
+			width 100%
+			height 0
+			overflow hidden
+			transition height 0.5s ease
+			&-item
+				a
+					text-decoration none
+					color black
+					border-bottom 1px solid black
+					border-left 1px solid black
+					border-right 1px solid black
+					padding 1rem
+					display block
+			&--show
+				font-weight 700
+				height 212px
+		
 @media (min-width 450px)
 	.header
 		background-color blue

@@ -2,12 +2,12 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Bottino - Bolsos y Zapatos</title>
+	<title>Clase</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href='https://fonts.googleapis.com/css?family=Caveat:400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css">
 	<!-- smoosh -->
-	<link rel="stylesheet" href="./css/main.css">
+	<link rel="stylesheet" href="css/main.css">
 	<!-- endsmoosh -->
 </head>
 <body>
@@ -16,15 +16,7 @@
 		<div class="header-mobile">
 			<section class="header-mobile-menu">
 				<h3 class="header-mobile-menu-title">Menú</h3>
-				<button class="header-mobile-menu-button"><i class="fa fa-bars" aria-hidden="true"></i></button>
-				<nav class="header-mobile-menu-nav">
-					<ul class="header-mobile-menu-nav-list">
-						<li class="header-mobile-menu-nav-list-item"><a href="#">Acerca de</a></li>
-						<li class="header-mobile-menu-nav-list-item"><a href="#">Productos</a></li>
-						<li class="header-mobile-menu-nav-list-item"><a href="#">Trabaja con Nosotros</a></li>
-						<li class="header-mobile-menu-nav-list-item"><a href="#">Servicio al Cliente</a></li>
-					</ul>
-				</nav>
+				<button id="buttonNav" class="header-mobile-menu-button"><i class="fa fa-bars" aria-hidden="true"></i></button>
 			</section>
 			<section class="header-mobile-choice">
 				<div class="header-mobile-choice-finder">
@@ -34,12 +26,15 @@
 				<img src="img/carrito.jpg" class="header-mobile-choice-marketcar">
 			</section>
 		</div>
+		<nav class="header-nav">
+			<ul class="header-nav-list" id="menuShow">
+				<li class="header-nav-list-item"><a href="#">Acerca de</a></li>
+				<li class="header-nav-list-item"><a href="#">Productos</a></li>
+				<li class="header-nav-list-item"><a href="#">Trabaja con Nosotros</a></li>
+				<li class="header-nav-list-item"><a href="#">Servicio al Cliente</a></li>
+				</ul>
+		</nav>
 	</header>
-
-	<section class="#">
-		<!--<img src="./img/logocopain.png" class=image-galery> -->
-	</section>
-
 
 	<!-- smoosh -->
 	<script src= "./js/bundle.js"></script>

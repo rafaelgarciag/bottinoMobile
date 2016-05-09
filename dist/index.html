@@ -2,40 +2,38 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Bottino - Bolsos y Zapatos</title>
+	<title>Clase</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href='https://fonts.googleapis.com/css?family=Caveat:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css">
 		<style></style>
 	</head>
 <body>
 	<header class="header">
 		<img src="img/bottino+.png" class="header-logo">
-		<div class="header-menu">
-			<h3 class="header-menu-title">Menú</h3>
-			<button class="header-menu-button">Menú</button>
-			<nav class="header-menu-nav">
-				<ul class="header-menu-nav-list">
-					<li class="header-menu-nav-list-item"><a href="#">Acerca de</a></li>
-					<li class="header-menu-nav-list-item"><a href="#">Productos</a></li>
-					<li class="header-menu-nav-list-item"><a href="#">Trabaja con Nosotros</a></li>
-					<li class="header-menu-nav-list-item"><a href="#">Servicio al Cliente</a></li>
+		<div class="header-mobile">
+			<section class="header-mobile-menu">
+				<h3 class="header-mobile-menu-title">Menú</h3>
+				<button id="buttonNav" class="header-mobile-menu-button"><i class="fa fa-bars" aria-hidden="true"></i></button>
+			</section>
+			<section class="header-mobile-choice">
+				<div class="header-mobile-choice-finder">
+					<img src="img/lupa.png" class="header-mobile-choice-finder-lupa">
+					<input type="text" class="header-mobile-choice-finder-box">
+				</div>
+				<img src="img/carrito.jpg" class="header-mobile-choice-marketcar">
+			</section>
+		</div>
+		<nav class="header-nav">
+			<ul class="header-nav-list" id="menuShow">
+				<li class="header-nav-list-item"><a href="#">Acerca de</a></li>
+				<li class="header-nav-list-item"><a href="#">Productos</a></li>
+				<li class="header-nav-list-item"><a href="#">Trabaja con Nosotros</a></li>
+				<li class="header-nav-list-item"><a href="#">Servicio al Cliente</a></li>
 				</ul>
-			</nav>
-		</div>
-		<div class="header-choice">
-			<div class="header-choice-finder">
-				<img src="img/lupa.png" class="header-choice-finder-lupa">
-				<input type="text" class="header-choice-finder-box">
-			</div>
-			<img src="img/carrito.jpg" class="header-choice-marketcar">
-		</div>
+		</nav>
 	</header>
 
-	<section class="#">
-		<!--<img src="./img/logocopain.png" class=image-galery> -->
-	</section>
-
-
-		<script>!function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n?n:r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}({1:[function(r,e,n){},{}]},{},[1]);</script>
+		<script>!function e(n,r,t){function o(i,f){if(!r[i]){if(!n[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var d=r[i]={exports:{}};n[i][0].call(d.exports,function(e){var r=n[i][1][e];return o(r?r:e)},d,d.exports,e,n,r,t)}return r[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}({1:[function(e,n,r){!function(){function e(){r.classList.toggle("header-nav-list--show")}var n=document.getElementById("buttonNav"),r=document.getElementById("menuShow");n.addEventListener("click",e)}()},{}]},{},[1]);</script>
 	</body>
 </html>	
