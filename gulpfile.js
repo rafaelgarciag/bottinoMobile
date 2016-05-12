@@ -42,6 +42,7 @@ gulp.task("server", function() {
 gulp.task("build:css", function() {
 	gulp.src(config.styles.main)
 	.pipe(stylus({
+		compress: true,
 		use: nib(),
 		"include css": true
 	}))
@@ -81,6 +82,6 @@ gulp.task("inline", function() {
 	.pipe(gulp.dest("./dist"));
 })
 
-gulp.task("build", ["build:css", "build:js", "images", "inline"])
+gulp.task("build", ["build:css", "build:js", "images", "inline"]);
 
 gulp.task("default", ["server", "watch", "build"]);
