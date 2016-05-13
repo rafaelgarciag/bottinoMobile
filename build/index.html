@@ -12,20 +12,30 @@
 </head>
 <body>
 	<header class="header">
-		<img src="img/bottino+.png" class="header-logo">
-		<div class="header-mobile">
-			<section class="header-mobile-menu">
-				<h3 class="header-mobile-menu-title">Menú</h3>
-				<button id="buttonNav" class="header-mobile-menu-button"><i class="fa fa-bars" aria-hidden="true"></i></button>
-			</section>
-			<section class="header-mobile-choice">
-				<div class="header-mobile-choice-finder">
-					<img src="img/lupa.png" class="header-mobile-choice-finder-lupa">
-					<input type="text" class="header-mobile-choice-finder-box">
-				</div>
-				<img src="img/carrito.jpg" class="header-mobile-choice-marketcar">
-			</section>
-		</div>
+		<article class="header-interaction">
+			<a class= "header-interaction-alogo" href="index.html"><img src="img/bottino+.png" class="header-interaction-logo"></a>
+			<div class="header-interaction-mobile">
+				<section class="header-interaction-mobile-menu">
+					<h3 class="header-interaction-mobile-menu-title" id="buttonNavT">Menú</h3>
+					<button id="buttonNav" class="header-interaction-mobile-menu-button"><i class="fa fa-bars" aria-hidden="true"></i></button>
+				</section>
+				<section class="header-interaction-mobile-choice">
+					<div class="header-interaction-mobile-choice-finder">
+						<img src="img/lupa.png" class="header-interaction-mobile-choice-finder-lupa">
+						<input type="text" class="header-interaction-mobile-choice-finder-box">
+					</div>
+					<img src="img/carrito.jpg" class="header-interaction-mobile-choice-marketcar">
+				</section>
+				<nav class="header-interaction-mobile-nav">
+					<ul class="header-interaction-mobile-nav-list">
+						<li class="header-interaction-mobile-nav-list-item"><a href="#">Acerca de</a></li>
+						<li class="header-interaction-mobile-nav-list-item"><a href="#">Productos</a></li>
+						<li class="header-interaction-mobile-nav-list-item"><a href="#">Trabaja con Nosotros</a></li>
+						<li class="header-interaction-mobile-nav-list-item"><a href="#">Servicio al Cliente</a></li>
+					</ul>
+				</nav>
+			</div>
+		</article>
 		<nav class="header-nav">
 			<ul class="header-nav-list" id="menuShow">
 				<li class="header-nav-list-item"><a href="#">Acerca de</a></li>

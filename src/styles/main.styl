@@ -7,119 +7,12 @@ body
 	font-family caveat
 	font-size 16px
 	color black
-.header
-	/*background-color green*/
-	height 27vh	
-	width 98%
-	padding 10px 3px 3px 3px
-	position fixed
-	top 0
-	left 0
-	z-index 10
-	&-logo
-		width 100%
-	&-mobile
-		display flex
-		justify-content space-between
-		align-items center
-		&-menu
-			width 25%
-			display flex
-			/*background-color yellow*/
-			order 1
-			justify-content space-around
-			&-title
-				width 50%
-				/*background-color purple*/
-				text-align center
-				margin 5% 0
-			&-button
-				width 50%
-				background-color white
-				border-style none
-		&-choice
-			display flex
-			flex-wrap wrap
-			order 2
-			&-finder
-				display flex
-				&-lupa
-					width 30px
-					height 30px
-					order 2
-				&-box
-					border-style none
-					order 1
-					margin-rigth 10%
-			&-marketcar
-				width 30px
-				height 30px
-	&-nav
-		margin-top 10px
-		background-color #DCD8D8
-		&-list
-			list-style-type none
-			width 100%
-			height 0
-			overflow hidden
-			transition height 0.5s ease
-			&-item
-				a
-					text-decoration none
-					color black
-					border-bottom 1px solid black
-					border-left 1px solid black
-					border-right 1px solid black
-					padding 1rem
-					display block
-			&--show
-				font-weight 700
-				height 212px
+
 .middle
 	&-images
-		position relative
 		padding-top 45%
-		/*height 0*/
 		&-women
 			top 0
 			left 0
 			width 100%
 			height 100%
-
-@media (min-width 450px)
-	.header
-		/*background-color blue*/
-		display flex
-		height 90px
-		&-logo
-			width 60%
-			padding-left 10%
-		&-mobile
-			flex-direction column
-			padding 2% 0
-			&-menu
-				order 2
-				width 100%
-				&-title
-					width 60%
-					text-align end
-					padding-left 18%
-				&-button
-					width 20%
-			&-choice
-				order 1
-				align-content space-around
-				/*background-color red*/
-				&-finder
-					width 80%
-					&-box
-						width 80%
-					&-lupa
-						width 15%
-						margin 0 5%
-						height 25px
-				&-marketcar
-					width 15%
-					height 25px
-	&nav
-		width 0
