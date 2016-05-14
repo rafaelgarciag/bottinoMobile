@@ -1,4 +1,4 @@
-(function menuAppear() {
+(function () {
 var buttonNav = document.getElementById("buttonNav");
 var menuShow = document.getElementById("menuShow");
 var buttonNavT = document.getElementById("buttonNavT");
