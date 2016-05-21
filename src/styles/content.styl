@@ -1,0 +1,62 @@
+.content
+	padding 0 3px
+	&-images
+		padding 0 3px
+		picture
+			margin 0 auto
+			img
+				width 100%
+	&-news
+		padding 0 3px
+		box-sizing border-box
+		display block
+		text-align center
+		&-first
+			background-color black
+			width 100%
+		&-second
+			background-color yellow
+			width 100%
+		&-third
+			background-color green
+			width 100%
+	&-social
+		padding 10% 0
+		width 100%
+		margin 0 auto
+		display flex
+		justify-content space-around
+		align-items center
+		&-icon
+			-webkit-filter grayscale(1)
+		&-icon:hover
+			-webkit-filter none
+
+@media (min-width 1124px)
+	.content
+		display flex
+		margin 0 auto
+		flex-wrap wrap
+		justify-content space-around
+		&-images
+			display flex
+			width 85%
+			order 2
+			justify-content space-between
+			align-items center
+			picture
+				margin 0 3px
+				img
+					border none
+		&-news
+			width 100%
+			margin 0 1%
+			order 3
+			padding-top 5%
+		&-social
+			width 10%
+			padding 0
+			margin 0
+			order 1
+			flex-direction column
+			justify-content space-between

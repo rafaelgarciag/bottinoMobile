@@ -35,18 +35,20 @@
 					margin 5% 0
 					font-size 1.5rem
 				&-button
-					width 50%
+					width 30%
 					background-color white
 					border-style none
+					padding 0
+					margin 0 auto
 			&-choice
 				display flex
 				flex-wrap wrap
 				order 2
 				&-finder
 					display flex
+					height 30px
 					&-lupa
 						width 30px
-						height 3vh
 						order 2
 					&-box
 						border-style none
@@ -56,7 +58,6 @@
 						background-color #DCD8D8
 				&-marketcar
 					width 30px
-					height 3vh
 			&-nav
 				display none
 	&-nav
@@ -88,7 +89,8 @@
 			display flex
 			align-items center
 			&-logo
-				padding-left 10%
+				padding-left 20%
+				width 80%
 			&-mobile
 				display flex
 				flex-direction column
@@ -99,7 +101,6 @@
 						font-size 2rem
 						width 60%
 						text-align end
-						padding-left 18%
 					&-button
 						width 20%
 				&-choice
@@ -107,18 +108,16 @@
 					align-content space-around
 					padding-bottom 10%
 					&-finder
-						width 70%
+						width 60%
 						&-box
 							width 80%
 						&-lupa
-							width 15%
+							width 20%
 							margin 0 5%
-							height 25px
 					&-marketcar
-						width 15%
-						height 25px
+						width 20%
 		
-@media (min-width 1024px)
+@media (min-width 1124px)
 	.header
 		&-interaction
 			display flex
@@ -130,9 +129,11 @@
 				&-choice
 					width 50%
 					order 1
+					margin-right 10%
 				&-nav
 					display block
 					order 2
+					margin-right 10%
 					&-list
 						list-style-type none
 						width 100%
@@ -145,3 +146,5 @@
 								color black
 								padding 0.3rem
 								display block
+						&-item:hover
+							background linear-gradient(to right, #3E3A3A, white)

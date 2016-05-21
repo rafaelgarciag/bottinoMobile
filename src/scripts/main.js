@@ -14,7 +14,7 @@ function onClickMenu () {
 
 //No funciona el script aún 130516
 function onScroll () {
-	if(window.scrollY > 1)
+	if(window.scrollY > 300)
 	{
 	alert("funciona");
 	//menuFixed.classList.toggle("header-interaction-mobile--light");		
