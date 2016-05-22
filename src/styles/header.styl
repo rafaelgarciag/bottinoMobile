@@ -27,7 +27,7 @@
 				color white
 				padding 2% 0
 			&-menu
-				width 25%
+				width 50%
 				display flex
 				order 1
 				justify-content space-around
@@ -36,28 +36,36 @@
 					text-align center
 					margin 5% 0
 					font-size 1.5rem
+					box-sizing border-box
 				&-button
-					width 30%
+					width 50%
 					border-style none
 					padding 0
 					margin 0 auto
 					background-color white
+					img
+						width 70%
+						box-sizing border-box
 					&--light
 						background-color black
 			&-choice
 				display flex
-				flex-wrap wrap
 				order 2
+				width 100%
+				height 33px
+				justify-content space-around
 				&-finder
 					display flex
-					height 30px
+					width 80%
 					&-lupa
 						width 30px
 						order 2
+						transform scaleX(-1)
 					&-box
 						border-style none
 						order 1
 						margin-rigth 10%
+						width 100%
 					&-box:focus
 						background-color #DCD8D8
 				&-market
@@ -67,10 +75,7 @@
 					margin-left 5px
 					background-color white
 					&-marketbox
-						text-align center
-						border-style none
-						width 30px
-						border-radius 10px
+						margin 10% 0
 					&-marketcar
 						margin 3px
 						width 25px
@@ -78,9 +83,10 @@
 			&-nav
 				display none
 	&-nav
-		margin-top 10px
 		background-color #DCD8D8
 		width 98%
+		position absolute
+		z-index 2
 		&-list
 			font-weight 700
 			list-style-type none
@@ -97,21 +103,42 @@
 				a:hover
 					background-color #A7A2A2
 				&-subnav
-					overflow hidden
+					width 100%
 					transition height 0.5s ease
-					display none
+					height 0
+					background-color #CAC6C6
+					overflow hidden
+					position absolute
+					z-index 2
 					&-subitem
 						a
 							padding 0.4rem 2rem
 				&-subnav-show
-					transition height 0.5s ease
-					display block
+					height 105px
 					&-subitem
+						display flex
+						a
+							padding 0.4rem 2rem
+				&-subnav2
+					transition height 0.5s ease
+					width 100%
+					height 0
+					background-color #CAC6C6
+					overflow hidden
+					position absolute
+					z-index 2
+					&-subitem2
+						a
+							padding 0.4rem 2rem
+				&-subnav2-show
+					height 40px
+					&-subitem2
+						display flex
 						a
 							padding 0.4rem 2rem
 			&--show
 				font-size 1.1rem
-				height 300px
+				height 200px
 
 @media (min-width 768px)
 	.header
@@ -119,7 +146,7 @@
 			display flex
 			align-items center
 			&-logo
-				padding-left 20%
+				padding-left 15%
 				width 80%
 			&-mobile
 				display flex
@@ -137,12 +164,15 @@
 					order 1
 					align-content space-around
 					padding-bottom 10%
+					margin-right 15%
 					&-finder
 						&-box
 							width 80%
 						&-lupa
-							width 20%
 							margin 0 5%
+		&-nav
+			width 40%
+			right 0
 		
 @media (min-width 1124px)
 	.header
@@ -172,5 +202,26 @@
 								color black
 								padding 0.3rem
 								display block
+							&-subnav
+								display none
+								position absolute
+								z-index 2
+								background-color white
+								list-style-type none
+								width 186.86px
+								background-color #CAC6C6
+								text-align start
+								&-subitem
+									a
+										border solid 1px black
 						&-item:hover
 							background linear-gradient(to right, #3E3A3A, white)
+							ul
+								display block
+								a:hover
+									background linear-gradient(to right, #3E3A3A, white)
+									
+						#acerca:hover
+							ul
+								display block
+								border solid 1px black

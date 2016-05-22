@@ -23,15 +23,25 @@
 						<img src="img/lupa+.png" class="header-interaction-mobile-choice-finder-lupa">
 					</div>
 					<div class="header-interaction-mobile-choice-market">
-						<input type="text" class="header-interaction-mobile-choice-market-marketbox" value="01">
+						<h4 class="header-interaction-mobile-choice-market-marketbox">01</h4>	
 						<img class="header-interaction-mobile-choice-market-marketcar" src="img/carro+.png">
 					</div>
 				</section>
 				<nav class="header-interaction-mobile-nav">
 					<ul class="header-interaction-mobile-nav-list">
-						<li class="header-interaction-mobile-nav-list-item"><a href="#">Productos</a></li>
+						<li class="header-interaction-mobile-nav-list-item"><a href="#">Productos</a>
+							<ul class="header-interaction-mobile-nav-list-item-subnav">
+								<li class="header-interaction-mobile-nav-list-item-subnav-subitem"><a href="hombres.html">Hombres</a></li>
+								<li class="header-interaction-mobile-nav-list-item-subnav-subitem"><a href="mujeres.html">Mujeres</a></li>
+								<li class="header-interaction-mobile-nav-list-item-subnav-subitem"><a href="accesorios.html">Accesorios</a></li>
+							</ul>
+						</li>
 						<li class="header-interaction-mobile-nav-list-item"><a href="#">Servicio al Cliente</a></li>
-						<li class="header-interaction-mobile-nav-list-item"><a href="#">Acerca de</a></li>
+						<li class="header-interaction-mobile-nav-list-item" id="acerca"><a href="#">Acerca de</a>
+							<ul class="header-interaction-mobile-nav-list-item-subnav">
+								<li id="empresa"><a href="empresa.html">La Empresa</a></li>
+							</ul>
+						</li>
 						<li class="header-interaction-mobile-nav-list-item"><a href="#">Trabaja con Nosotros</a></li>
 						
 					</ul>
@@ -40,15 +50,19 @@
 		</article>
 		<nav class="header-nav">
 			<ul class="header-nav-list" id="menuShow">
-				<li class="header-nav-list-item"><a href="#">Productos</a>
-					<ul class="header-nav-list-item-subnav">
+				<li class="header-nav-list-item" id="itemClick"><a href="#">Productos</a>
+					<ul class="header-nav-list-item-subnav" id="menuInt">
 						<li class="header-nav-list-item-subnav-subitem"><a href="hombres.html">Hombres</a></li>
 						<li class="header-nav-list-item-subnav-subitem"><a href="mujeres.html">Mujeres</a></li>
 						<li class="header-nav-list-item-subnav-subitem"><a href="accesorios.html">Accesorios</a></li>
 					</ul>
 				</li>
 				<li class="header-nav-list-item"><a href="#">Servicio al Cliente</a></li>
-				<li class="header-nav-list-item"><a href="#">Acerca de</a></li>
+				<li class="header-nav-list-item" id="itemClick2"><a href="#">Acerca de</a>
+					<ul class="header-nav-list-item-subnav2" id="menuInt2">
+						<li class="header-nav-list-item-subnav2-subitem2"><a href="empresa.html">La Empresa</a></li>
+					</ul>
+				</li>
 				<li class="header-nav-list-item"><a href="#">Trabaja con Nosotros</a></li>				
 			</ul>
 		</nav>
@@ -86,6 +100,6 @@
 	<footer class="footer">
 		Bottino Bolsos y Zapatos es una marca de COPAIN S.A.S. Nit.: 900.537.439-1 ::: Contacto: 317 301 0983 - (1) 306 1143 ::: Bogotá D.C. - Colombia :::
 	</footer>
-		<script>!function e(n,t,r){function o(u,c){if(!t[u]){if(!n[u]){var d="function"==typeof require&&require;if(!c&&d)return d(u,!0);if(i)return i(u,!0);var a=new Error("Cannot find module '"+u+"'");throw a.code="MODULE_NOT_FOUND",a}var f=t[u]={exports:{}};n[u][0].call(f.exports,function(e){var t=n[u][1][e];return o(t?t:e)},f,f.exports,e,n,t,r)}return t[u].exports}for(var i="function"==typeof require&&require,u=0;u<r.length;u++)o(r[u]);return o}({1:[function(e,n,t){!function(){function e(){r.classList.toggle("header-nav-list--show")}function n(){window.scrollY>300&&alert("funciona")}var t=document.getElementById("buttonNav"),r=document.getElementById("menuShow"),o=document.getElementById("buttonNavT"),i=document.getElementById("menuFixed");t.addEventListener("click",e),o.addEventListener("click",e),i.addEventListener("scroll",n),n()}()},{}]},{},[1]);</script>
+		<script>!function e(t,n,i){function r(u,c){if(!n[u]){if(!t[u]){var d="function"==typeof require&&require;if(!c&&d)return d(u,!0);if(o)return o(u,!0);var l=new Error("Cannot find module '"+u+"'");throw l.code="MODULE_NOT_FOUND",l}var a=n[u]={exports:{}};t[u][0].call(a.exports,function(e){var n=t[u][1][e];return r(n?n:e)},a,a.exports,e,t,n,i)}return n[u].exports}for(var o="function"==typeof require&&require,u=0;u<i.length;u++)r(i[u]);return r}({1:[function(e,t,n){!function(){function e(){o.classList.toggle("header-nav-list--show")}function t(){d.classList.toggle("header-nav-list-item-subnav-show")}function n(){menuInt2.classList.toggle("header-nav-list-item-subnav2-show")}function i(){window.scrollY>300&&alert("funciona")}var r=document.getElementById("buttonNav"),o=document.getElementById("menuShow"),u=document.getElementById("buttonNavT"),c=document.getElementById("menuFixed"),d=document.getElementById("menuInt"),l=document.getElementById("itemClick"),a=document.getElementById("itemClick2");r.addEventListener("click",e),u.addEventListener("click",e),l.addEventListener("click",t),a.addEventListener("click",n),c.addEventListener("scroll",i),i()}()},{}]},{},[1]);</script>
 	</body>
 </html>	
