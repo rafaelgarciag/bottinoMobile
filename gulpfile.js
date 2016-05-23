@@ -76,12 +76,18 @@ gulp.task("images", function() {
 	.pipe(gulp.dest(config.images.output));
 });
 
-gulp.task("inline", function() {
+gulp.task("inline-home", function() {
 	gulp.src("./build/index.html")
 	.pipe(smoosher())
 	.pipe(gulp.dest("./dist"));
 })
 
-gulp.task("build", ["build:css", "build:js", "images", "inline"]);
+gulp.task("inline-mujeres", function() {
+	gulp.src("./build/mujeres.html")
+	.pipe(smoosher())
+	.pipe(gulp.dest("./dist"));
+})
+
+gulp.task("build", ["build:css", "build:js", "images", "inline-home", "inline-mujeres"]);
 
 gulp.task("default", ["server", "watch", "build"]);

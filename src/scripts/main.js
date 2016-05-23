@@ -11,7 +11,6 @@ buttonNav.addEventListener("click", onClickMenu);
 buttonNavT.addEventListener("click", onClickMenu);
 itemClick.addEventListener("click", onMenuInt);
 itemClick2.addEventListener("click", onMenuInt2);
-menuFixed.addEventListener("scroll", onScroll);
 
 function onClickMenu () {
 	menuShow.classList.toggle("header-nav-list--show");
@@ -22,14 +21,4 @@ function onMenuInt () {
 function onMenuInt2 () {
 	menuInt2.classList.toggle("header-nav-list-item-subnav2-show");
 }
-
-//No funciona el script aún 130516
-function onScroll () {
-	if(window.scrollY > 300)
-	{
-	alert("funciona");
-	//menuFixed.classList.toggle("header-interaction-mobile--light");		
-	}
-}
-onScroll();
 }())
