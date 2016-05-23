@@ -94,6 +94,12 @@ gulp.task("inline-mujeres-tac", function() {
 	.pipe(gulp.dest("./dist"));
 })
 
-gulp.task("build", ["build:css", "build:js", "images", "inline-home", "inline-mujeres", "inline-mujeres-tac"]);
+gulp.task("inline-032", function() {
+	gulp.src("./build/032.html")
+	.pipe(smoosher())
+	.pipe(gulp.dest("./dist"));
+})
+
+gulp.task("build", ["build:css", "build:js", "images", "inline-home", "inline-mujeres", "inline-mujeres-tac", "inline-032"]);
 
 gulp.task("default", ["server", "watch", "build"]);
