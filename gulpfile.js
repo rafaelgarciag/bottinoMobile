@@ -100,6 +100,24 @@ gulp.task("inline-032", function() {
 	.pipe(gulp.dest("./dist"));
 })
 
-gulp.task("build", ["build:css", "build:js", "images", "inline-home", "inline-mujeres", "inline-mujeres-tac", "inline-032"]);
+gulp.task("inline-servicio", function() {
+	gulp.src("./build/servicio.html")
+	.pipe(smoosher())
+	.pipe(gulp.dest("./dist"));
+})
+
+gulp.task("inline-empresa", function() {
+	gulp.src("./build/empresa.html")
+	.pipe(smoosher())
+	.pipe(gulp.dest("./dist"));
+})
+
+gulp.task("inline-trabajo", function() {
+	gulp.src("./build/trabajo.html")
+	.pipe(smoosher())
+	.pipe(gulp.dest("./dist"));
+})
+
+gulp.task("build", ["build:css", "build:js", "images", "inline-home", "inline-mujeres", "inline-mujeres-tac", "inline-032", "inline-empresa", "inline-servicio", "inline-trabajo"]);
 
 gulp.task("default", ["server", "watch", "build"]);

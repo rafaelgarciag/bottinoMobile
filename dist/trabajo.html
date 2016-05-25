@@ -6,10 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href='https://fonts.googleapis.com/css?family=Caveat:400,700' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
-	<!-- smoosh -->
-	<link rel="stylesheet" href="./css/main.css">
-	<!-- endsmoosh -->
-</head>
+		<style></style>
+	</head>
 <body>
 	<header class="header">
 		<article class="header-interaction">
@@ -69,28 +67,40 @@
 			</ul>
 		</nav>
 	</header>
-	<article class="content">
-		<section class="content-images">
-			<picture>
-				<source media="(min-width: 1024px)" srcset="img/nino.jpg">
-				<source media="(min-width: 768px)" srcset="img/mujer.png">
-				<img src="img/hombre.jpg">
-			</picture>
-			<picture>
-				<source media="(min-width: 1024px)" srcset="img/hombre.jpg">
-				<source media="(min-width: 768px)" srcset="img/nino.jpg">
-				<img src="img/mujer.png">
-			</picture>
-			<picture>
-				<source media="(min-width: 1024px)" srcset="img/mujer.png">
-				<source media="(min-width: 768px)" srcset="img/hombre.jpg">
-				<img src="img/nino.jpg">
-			</picture>
+	<article class="line">
+		<h1 class="line-title">Servicio al Cliente</h1>
+		<section class="line-paragraf">
+			<p>Para nosotros es un gusto conocer su opinión bla, bla bla... deje sus comentarios...</p>
+			<p>O llame, ahí está el número, o escríbanos... mejor dicho, cuando no hay voluntad, no hay voluntad...</p>
+			<p>Graciassssssss. <a class="line-paragraf-link" href="política.html">Políticas de Privacidad</a></p>
 		</section>
-		<section class="content-news">
-			<img src="img/logocopain.png" alt="copainNews" title="copainNews" class="content-news-first">
-			<img src="img/logocopain.png" alt="copainNews" title="copainNews" class="content-news-second">
-			<img src="img/logocopain.png" alt="copainNews" title="copainNews" class="content-news-third">
+		<section class="line-form">
+			<form>
+				<div class="line-form-field">
+					<h4 class="line-form-field-name">Nombre*</h4>
+					<input type="text" class="line-form-field-box">
+				</div>
+				<div class="line-form-field">
+					<h4 class="line-form-field-name">Correo*</h4>
+					<input type="text" class="line-form-field-box">
+				</div>
+				<div class="line-form-field">
+					<h4 class="line-form-field-name">Teléfono</h4>
+					<input type="text" class="line-form-field-box">
+				</div>
+				<div class="line-form-field">
+					<h4 class="line-form-field-name">Comentario*</h4>
+					<input type="text" class="line-form-field-commentary">
+				</div>
+				<div class="line-form-field line-form-field-accept">
+					<h4 class="line-form-field-name line-form-field-name-agree">He leído y estoy de acuerdo con las <a href="politicas.html">políticas de privacidad*</a></h4>
+					<input type="Checkbox" class="line-form-field-check">
+				</div>
+				<div class="line-form-button">
+					<input type="submit" value="Enviar">
+					<input type="reset" value="Limpiar">
+				</div>
+			</form>
 		</section>
 		<section class="content-social">
 			<a class="content-social-icon" href="http://facebook.com/bottinobz" target="_blank"><img src="img/facebook.png"></a>
@@ -102,8 +112,6 @@
 	<footer class="footer">
 		Bottino Bolsos y Zapatos es una marca de COPAIN S.A.S. Nit.: 900.537.439-1 ::: Contacto: 317 301 0983 - (1) 306 1143 ::: Bogotá D.C. - Colombia :::
 	</footer>
-	<!-- smoosh -->
-	<script src= "./js/bundle.js"></script>
-	<!-- endsmoosh -->
-</body>
-</html>	
+		<script>!function e(t,n,i){function r(u,c){if(!n[u]){if(!t[u]){var d="function"==typeof require&&require;if(!c&&d)return d(u,!0);if(o)return o(u,!0);var l=new Error("Cannot find module '"+u+"'");throw l.code="MODULE_NOT_FOUND",l}var a=n[u]={exports:{}};t[u][0].call(a.exports,function(e){var n=t[u][1][e];return r(n?n:e)},a,a.exports,e,t,n,i)}return n[u].exports}for(var o="function"==typeof require&&require,u=0;u<i.length;u++)r(i[u]);return r}({1:[function(e,t,n){!function(){function e(){r.classList.toggle("header-nav-list--show")}function t(){u.classList.toggle("header-nav-list-item-subnav-show")}function n(){menuInt2.classList.toggle("header-nav-list-item-subnav2-show")}var i=document.getElementById("buttonNav"),r=document.getElementById("menuShow"),o=document.getElementById("buttonNavT"),u=(document.getElementById("menuFixed"),document.getElementById("menuInt")),c=document.getElementById("itemClick"),d=document.getElementById("itemClick2");i.addEventListener("click",e),o.addEventListener("click",e),c.addEventListener("click",t),d.addEventListener("click",n)}()},{}]},{},[1]);</script>
+	</body>
+</html>
