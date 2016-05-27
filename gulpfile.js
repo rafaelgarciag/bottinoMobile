@@ -21,6 +21,7 @@ var config = {
 	},
 	scripts: {
 		main: "./src/scripts/main.js",
+		slides: "./src/scripts/jquery.slides.js",
 		watch: "./src/scripts/**/*.js",
 		output: "./build/js"
 	},
@@ -54,6 +55,15 @@ gulp.task("build:js", function() {
 	return browserify(config.scripts.main)
 	.bundle()
 	.pipe(source("bundle.js"))
+	.pipe(buffer())
+	.pipe(uglify())
+	.pipe(gulp.dest(config.scripts.output))
+})
+
+gulp.task("build:slides", function() {
+	return browserify(config.scripts.slides)
+	.bundle()
+	.pipe(source("slides.js"))
 	.pipe(buffer())
 	.pipe(uglify())
 	.pipe(gulp.dest(config.scripts.output))
@@ -118,6 +128,6 @@ gulp.task("inline-trabajo", function() {
 	.pipe(gulp.dest("./dist"));
 })
 
-gulp.task("build", ["build:css", "build:js", "images", "inline-home", "inline-mujeres", "inline-mujeres-tac", "inline-032", "inline-empresa", "inline-servicio", "inline-trabajo"]);
+gulp.task("build", ["build:css", "build:js", "build:slides", "images", "inline-home", "inline-mujeres", "inline-mujeres-tac", "inline-032", "inline-empresa", "inline-servicio", "inline-trabajo"]);
 
 gulp.task("default", ["server", "watch", "build"]);
