@@ -13,7 +13,7 @@
 <body>
 	<header class="header">
 		<article class="header-interaction">
-			<a class= "header-interaction-alogo" href="index.html"><img src="img/bottino+.png" class="header-interaction-logo"></a>
+			<a class= "header-interaction-logo" href="index.html"><img src="img/bottino+.png" class="header-interaction-logo"></a>
 			<div id="menuFixed" class="header-interaction-mobile">
 				<section class="header-interaction-mobile-menu">
 					<h3 class="header-interaction-mobile-menu-title" id="buttonNavT">Menú</h3>
@@ -71,21 +71,21 @@
 	</header>
 	<article class="content">
 		<section class="content-images slides">
-			<a href="#">
+			<a href="#" class="content-images-category">
 				<picture>
 					<source media="(min-width: 1024px)" srcset="img/nino.jpg">
 					<source media="(min-width: 768px)" srcset="img/mujer.png">
 					<img src="img/hombre.jpg">
 				</picture>
 			</a>
-			<a href="mujeres.html">
+			<a href="mujeres.html" class="content-images-category">
 				<picture>
 					<source media="(min-width: 1024px)" srcset="img/hombre.jpg">
 					<source media="(min-width: 768px)" srcset="img/nino.jpg">
 					<img src="img/mujer.png">
 				</picture>
 			</a>
-			<a href="#">
+			<a href="#" class="content-images-category">
 				<picture>
 					<source media="(min-width: 1024px)" srcset="img/mujer.png">
 					<source media="(min-width: 768px)" srcset="img/hombre.jpg">
@@ -114,7 +114,7 @@
 	<script src= "./js/bundle.js"></script>
 	<script type="text/javascript">
 		$(function(){
-			if($(window).width()<600){
+			if($(window).width()<1000){
 				$(".slides").slidesjs({
 				    play: {
 				      active: true,
@@ -138,6 +138,15 @@
 			else {
 				$('.slides').removeClass('slides');
 			}
+		});
+
+		var width = $(window).width();
+		$(window).resize(function() {
+			if($(this).width() != width) {
+				width = $(this).width();
+				location.reload();
+			}
+			
 		});
 	</script>
 	<!-- endsmoosh -->
