@@ -17,12 +17,12 @@
 			<div id="menuFixed" class="header-interaction-mobile">
 				<section class="header-interaction-mobile-menu">
 					<h3 class="header-interaction-mobile-menu-title" id="buttonNavT">Menú</h3>
-					<button id="buttonNav" class="header-interaction-mobile-menu-button"><img src="img/menu+.png"></button>
+					<button class="header-interaction-mobile-menu-button"><img id="buttonNav" src="img/menu+.png"></button>
 				</section>
 				<section class="header-interaction-mobile-choice">
 					<div class="header-interaction-mobile-choice-finder">
 						<input type="text" class="header-interaction-mobile-choice-finder-box">
-						<img src="img/lupa+.png" class="header-interaction-mobile-choice-finder-lupa">
+						<img id="finder" src="img/lupa+.png" class="header-interaction-mobile-choice-finder-lupa">
 					</div>
 					<div class="header-interaction-mobile-choice-market">
 						<h4 class="header-interaction-mobile-choice-market-marketbox">01</h4>	
@@ -94,6 +94,7 @@
 			</a>
 		</section>
 		<section class="content-news">
+			<video controls src="video/dog.mp4" poster="../img/wom-taco/030.png"class="content-news-first"></video>
 			<img src="img/logocopain.png" alt="copainNews" title="copainNews" class="content-news-first">
 			<img src="img/logocopain.png" alt="copainNews" title="copainNews" class="content-news-second">
 			<img src="img/logocopain.png" alt="copainNews" title="copainNews" class="content-news-third">
@@ -140,14 +141,15 @@
 			}
 		});
 
+	if($(window).width() < 1200) {
 		var width = $(window).width();
 		$(window).resize(function() {
 			if($(this).width() != width) {
 				width = $(this).width();
 				location.reload();
 			}
-			
 		});
+	}
 	</script>
 	<!-- endsmoosh -->
 </body>

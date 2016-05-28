@@ -21,4 +21,23 @@ function onMenuInt () {
 function onMenuInt2 () {
 	menuInt2.classList.toggle("header-nav-list-item-subnav2-show");
 }
+
+if($(window).width() < 800) {
+	$(window).scroll(function(event) {
+	    var y = $(this).scrollTop();
+	    if (y >= 140) {
+	        $(menuFixed).addClass('header-interaction-mobile--light');
+	        $(".header-nav").addClass("fixed");
+	        $(buttonNav).attr("src", "img/menu-.png");
+	        $("#finder").attr("src", "img/lupa-.png");
+	    
+	    } 
+	    else {
+	        $(menuFixed).removeClass('header-interaction-mobile--light');
+	        $(".header-nav").removeClass("fixed");
+	        $(buttonNav).attr("src", "img/menu+.png");
+	        $("#finder").attr("src", "img/lupa+.png");
+			}
+	});
+}
 }())
