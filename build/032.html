@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href='https://fonts.googleapis.com/css?family=Caveat:400,700' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 	<!-- smoosh -->
 	<link rel="stylesheet" href="./css/main.css">
 	<!-- endsmoosh -->
@@ -70,7 +71,7 @@
 		</nav>
 	</header>
 	<article class="product">
-		<section class="product-images slides">
+		<section class="product-images slides-product">
 			<div class="product-images-item">
 				<picture>
 					<source media="(min-width: 1124px)" srcset="img/wom-taco/027.png">
@@ -87,9 +88,9 @@
 			</div>
 			<div class="product-images-item">
 				<picture>
-					<source media="(min-width: 1124px)" srcset="img/wom-taco/027.png">
+					<source media="(min-width: 1124px)" srcset="img/wom-taco/026.png">
 					<source media="(min-width: 768px)" srcset="img/wom-taco/030.png">
-					<img src="img/wom-taco/026.png">
+					<img src="img/wom-taco/027.png">
 				</picture>
 			</div>
 		</section>	
@@ -132,10 +133,10 @@
 	<script type="text/javascript">
 		$(function(){
 			if($(window).width()<600){
-				$(".slides").slidesjs({
+				$(".slides-product").slidesjs({
 				    height: 700,
 				    play: {
-				      active: true,
+				      active: false,
 				        // [boolean] Generate the play and stop buttons.
 				        // You cannot use your own buttons. Sorry.
 				      effect: "fade",
@@ -160,4 +161,4 @@
 	</script>
 	<!-- endsmoosh -->
 </body>
-</html>	
+</html>
