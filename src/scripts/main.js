@@ -40,4 +40,7 @@ if($(window).width() < 800) {
 			}
 	});
 }
+if($(window).width() > 1000) {
+	$(".content").find(".loader").remove();
+}	
 }())

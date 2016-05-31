@@ -22,10 +22,10 @@
 						<input type="text" class="header-interaction-mobile-choice-finder-box">
 						<img id="finder" src="img/lupa+.png" class="header-interaction-mobile-choice-finder-lupa">
 					</div>
-					<div class="header-interaction-mobile-choice-market">
+					<a href="#" class="header-interaction-mobile-choice-market">
 						<h4 class="header-interaction-mobile-choice-market-marketbox">01</h4>	
 						<img class="header-interaction-mobile-choice-market-marketcar" src="img/carro+.png">
-					</div>
+					</a>
 				</section>
 				<nav class="header-interaction-mobile-nav">
 					<ul class="header-interaction-mobile-nav-list">
@@ -68,6 +68,7 @@
 		</nav>
 	</header>
 	<article class="content">
+		<div class="loader"></div>
 		<section class="content-images slides">
 			<a href="#" class="content-images-category">
 				<picture>
@@ -132,6 +133,7 @@
 				        // [number] restart delay on inactive slideshow
 					}
 				 });
+			$(".content").find(".loader").remove();
 			}
 			else {
 				$('.slides').removeClass('slides');
