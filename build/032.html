@@ -6,24 +6,23 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href='https://fonts.googleapis.com/css?family=Caveat:400,700' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 	<!-- smoosh -->
 	<link rel="stylesheet" href="./css/main.css">
 	<!-- endsmoosh -->
 </head>
 <body>
-	<header class="header">
+		<header class="header">
 		<article class="header-interaction">
 			<a class= "header-interaction-logo" href="index.html"><img src="img/bottino+.png" class="header-interaction-logo"></a>
 			<div id="menuFixed" class="header-interaction-mobile">
-				<section class="header-interaction-mobile-menu">
+				<section class="header-interaction-mobile-menu" id="buttonNav">
 					<h3 class="header-interaction-mobile-menu-title" id="buttonNavT">Menú</h3>
-					<button id="buttonNav" class="header-interaction-mobile-menu-button"><img src="img/menu+.png"></button>
+					<button class="header-interaction-mobile-menu-button"><img  id="menuButton" src="img/menu+.png"></button>
 				</section>
 				<section class="header-interaction-mobile-choice">
 					<div class="header-interaction-mobile-choice-finder">
 						<input type="text" class="header-interaction-mobile-choice-finder-box">
-						<img src="img/lupa+.png" class="header-interaction-mobile-choice-finder-lupa">
+						<img id="finder" src="img/lupa+.png" class="header-interaction-mobile-choice-finder-lupa">
 					</div>
 					<a href="#" class="header-interaction-mobile-choice-market">
 						<h4 class="header-interaction-mobile-choice-market-marketbox">01</h4>	
@@ -40,7 +39,7 @@
 							</ul>
 						</li>
 						<li class="header-interaction-mobile-nav-list-item"><a href="servicio.html">Servicio al Cliente</a></li>
-						<li class="header-interaction-mobile-nav-list-item" id="acerca"><a href=#">Acerca de</a>
+						<li class="header-interaction-mobile-nav-list-item" id="acerca"><a href="#">Acerca de</a>
 							<ul class="header-interaction-mobile-nav-list-item-subnav">
 								<li><a href="empresa.html">La Empresa</a></li>
 							</ul>
@@ -53,16 +52,16 @@
 		</article>
 		<nav class="header-nav">
 			<ul class="header-nav-list" id="menuShow">
-				<li class="header-nav-list-item" id="itemClick"><a href="#">Productos</a>
-					<ul class="header-nav-list-item-subnav" id="menuInt">
+				<li class="header-nav-list-item" id="productNav"><a href="#">Productos</a>
+					<ul class="header-nav-list-item-subnav" id="productsList">
 						<li class="header-nav-list-item-subnav-subitem"><a href="hombres.html">Hombres</a></li>
 						<li class="header-nav-list-item-subnav-subitem"><a href="mujeres.html">Mujeres</a></li>
 						<li class="header-nav-list-item-subnav-subitem"><a href="accesorios.html">Accesorios</a></li>
 					</ul>
 				</li>
 				<li class="header-nav-list-item"><a href="servicio.html">Servicio al Cliente</a></li>
-				<li class="header-nav-list-item" id="itemClick2"><a href="#">Acerca de</a>
-					<ul class="header-nav-list-item-subnav2" id="menuInt2">
+				<li class="header-nav-list-item" id="aboutNav"><a href="#">Acerca de</a>
+					<ul class="header-nav-list-item-subnav2" id="companyList">
 						<li class="header-nav-list-item-subnav2-subitem2"><a href="empresa.html">La Empresa</a></li>
 					</ul>
 				</li>
