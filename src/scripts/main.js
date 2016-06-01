@@ -22,25 +22,35 @@ function onMenuInt2 () {
 	menuInt2.classList.toggle("header-nav-list-item-subnav2-show");
 }
 
-if($(window).width() < 800) {
-	$(window).scroll(function(event) {
-	    var y = $(this).scrollTop();
-	    if (y >= 140) {
-	        $(menuFixed).addClass('header-interaction-mobile--light');
-	        $(".header-nav").addClass("fixed");
-	        $(buttonNav).attr("src", "img/menu-.png");
-	        $("#finder").attr("src", "img/lupa-.png");
-	    
-	    } 
-	    else {
-	        $(menuFixed).removeClass('header-interaction-mobile--light');
-	        $(".header-nav").removeClass("fixed");
-	        $(buttonNav).attr("src", "img/menu+.png");
-	        $("#finder").attr("src", "img/lupa+.png");
+	if($(window).width() > 550 && $(window).width() < 1200) {
+		var width = $(window).width();
+		$(window).resize(function() {
+			if($(this).width() != width) {
+				width = $(this).width();
+				location.reload();
 			}
-	});
-}
-if($(window).width() > 1000) {
-	$(".content").find(".loader").remove();
-}	
+		});	
+	}
+
+	if($(window).width() < 768) {
+		$(window).scroll(function(event) {
+		    var y = $(this).scrollTop();
+		    if (y >= 140) {
+		        $(menuFixed).addClass('header-interaction-mobile--light');
+		        $(".header-nav").addClass("fixed");
+		        $(buttonNav).attr("src", "img/menu-.png");
+		        $("#finder").attr("src", "img/lupa-.png");
+		    
+		    } 
+		    else {
+		        $(menuFixed).removeClass('header-interaction-mobile--light');
+		        $(".header-nav").removeClass("fixed");
+		        $(buttonNav).attr("src", "img/menu+.png");
+		        $("#finder").attr("src", "img/lupa+.png");
+				}
+		});
+	}
+	if($(window).width() > 768) {
+		$(".content").find(".loader").remove();
+	}
 }())
