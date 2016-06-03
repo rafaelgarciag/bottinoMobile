@@ -8,8 +8,10 @@ $(function () {
 	$("#buttonNav").click(function (event) {
 		event.stopPropagation();
 		$("#menuShow").toggleClass("header-nav-list--show");
+		$
 		$("#productsList").removeClass("header-nav-list-item-subnav-show");
 		$("#companyList").removeClass("header-nav-list-item-subnav2-show");
+		$('img', this).toggle();
 	});
 
 	$("#productNav").click(function (event) {
@@ -49,6 +51,7 @@ $(function () {
 		        $("#menuFixed").addClass('header-interaction-mobile--light');
 		        $(".header-nav").addClass("fixed");
 		        $("#menuButton").attr("src", "img/menu-.png");
+		        $("#menuButton1").attr("src", "img/menu1-.png");
 		        $("#finder").attr("src", "img/lupa-.png");
 		    
 		    } 
@@ -56,6 +59,7 @@ $(function () {
 		        $("#menuFixed").removeClass('header-interaction-mobile--light');
 		        $(".header-nav").removeClass("fixed");
 		        $("#menuButton").attr("src", "img/menu+.png");
+		        $("#menuButton1").attr("src", "img/menu1+.png");
 		        $("#finder").attr("src", "img/lupa+.png");
 				}
 		});
