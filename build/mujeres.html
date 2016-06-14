@@ -6,24 +6,25 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href='https://fonts.googleapis.com/css?family=Caveat:400,700' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
-	<!-- smoosh -->
 	<link rel="stylesheet" href="./css/main.css">
+	<!-- smoosh -->
+	<link rel="stylesheet" href="./css/main2.css">
 	<!-- endsmoosh -->
 </head>
 <body>
-		<header class="header">
+	<header class="header">
 		<article class="header-interaction">
 			<a class= "header-interaction-logo" href="index.html"><img src="img/bottino+.png" class="header-interaction-logo"></a>
 			<div id="menuFixed" class="header-interaction-mobile">
 				<section class="header-interaction-mobile-menu" id="buttonNav">
 					<h3 class="header-interaction-mobile-menu-title" id="buttonNavT">Menú</h3>
-					<button class="header-interaction-mobile-menu-button"><img  id="menuButton" src="img/menu+.png"></button>
+					<button class="header-interaction-mobile-menu-button"><img  id="menuButton" src="img/menu+.png"><img id='menuButton1' style="display: none;" src="img/menu1+.png"></button>
 				</section>
-				<section class="header-interaction-mobile-choice">
-					<div class="header-interaction-mobile-choice-finder">
+				<section id="findBox" class="header-interaction-mobile-choice">
+					<form class="header-interaction-mobile-choice-finder">
 						<input type="text" class="header-interaction-mobile-choice-finder-box">
-						<img id="finder" src="img/lupa+.png" class="header-interaction-mobile-choice-finder-lupa">
-					</div>
+						<input type="image" id="finder" src="img/lupa+.png" class="header-interaction-mobile-choice-finder-lupa">
+					</form>
 					<a href="#" class="header-interaction-mobile-choice-market">
 						<h4 class="header-interaction-mobile-choice-market-marketbox">01</h4>	
 						<img class="header-interaction-mobile-choice-market-marketcar" src="img/carro+.png">
@@ -52,7 +53,7 @@
 		</article>
 		<nav class="header-nav">
 			<ul class="header-nav-list" id="menuShow">
-				<li class="header-nav-list-item" id="productNav"><a href="#">Productos</a>
+				<li class="header-nav-list-item" id="productNav"><a>Productos</a>
 					<ul class="header-nav-list-item-subnav" id="productsList">
 						<li class="header-nav-list-item-subnav-subitem"><a href="hombres.html">Hombres</a></li>
 						<li class="header-nav-list-item-subnav-subitem"><a href="mujeres.html">Mujeres</a></li>
@@ -60,7 +61,7 @@
 					</ul>
 				</li>
 				<li class="header-nav-list-item"><a href="servicio.html">Servicio al Cliente</a></li>
-				<li class="header-nav-list-item" id="aboutNav"><a href="#">Acerca de</a>
+				<li class="header-nav-list-item" id="aboutNav"><a>Acerca de</a>
 					<ul class="header-nav-list-item-subnav2" id="companyList">
 						<li class="header-nav-list-item-subnav2-subitem2"><a href="empresa.html">La Empresa</a></li>
 					</ul>
@@ -78,29 +79,29 @@
 				<a href="mujeres-tac.html"><img src="img/boton-tacones-mobile.jpg"></a>
 			</picture>
 			<picture>
-				<source media="(min-width: 1024px)" srcset="img/hombre.jpg">
-				<source media="(min-width: 768px)" srcset="img/nino.jpg">
-				<a href="#"><img src="img/mujer.png"></a>
+				<source media="(min-width: 1024px)" srcset="img/boton-baletas-mobile.jpg">
+				<source media="(min-width: 768px)" srcset="img/boton-baletas-mobile.jpg">
+				<a href="#"><img src="img/boton-baletas-mobile.jpg"></a>
 			</picture>
 			<picture>
-				<source media="(min-width: 1024px)" srcset="img/mujer.png">
-				<source media="(min-width: 768px)" srcset="img/hombre.jpg">
-				<a href="#"><img src="img/nino.jpg"></a>
+				<source media="(min-width: 1024px)" srcset="img/boton-botas-mobile.jpg">
+				<source media="(min-width: 768px)" srcset="img/boton-botas-mobile.jpg">
+				<a href="#"><img src="img/boton-botas-mobile.jpg"></a>
 			</picture>
 			<picture>
-				<source media="(min-width: 1024px)" srcset="img/nino.jpg">
-				<source media="(min-width: 768px)" srcset="img/mujer.png">
-				<a href="#"><img src="img/hombre.jpg"></a>
+				<source media="(min-width: 1024px)" srcset="img/boton-casual-mobile.jpg">
+				<source media="(min-width: 768px)" srcset="img/boton-casual-mobile.jpg">
+				<a href="#"><img src="img/boton-casual-mobile.jpg"></a>
 			</picture>
 			<picture>
-				<source media="(min-width: 1024px)" srcset="img/hombre.jpg">
-				<source media="(min-width: 768px)" srcset="img/nino.jpg">
-				<a href="#"><img src="img/mujer.png"></a>
+				<source media="(min-width: 1024px)" srcset="img/boton-deportivos-mobile.jpg">
+				<source media="(min-width: 768px)" srcset="img/boton-deportivos-mobile.jpg">
+				<a href="#"><img src="img/boton-deportivos-mobile.jpg"></a>
 			</picture>
 			<picture>
-				<source media="(min-width: 1024px)" srcset="img/mujer.png">
-				<source media="(min-width: 768px)" srcset="img/hombre.jpg">
-				<a href="#"><img src="img/nino.jpg"></a>
+				<source media="(min-width: 1024px)" srcset="img/boton-botines-mobile.jpg">
+				<source media="(min-width: 768px)" srcset="img/boton-botines-mobile.jpg">
+				<a href="#"><img src="img/boton-botines-mobile.jpg"></a>
 			</picture>
 		</section>
 		<section class="content-social">
