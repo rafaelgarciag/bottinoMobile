@@ -69,6 +69,15 @@ gulp.task("build:slides", function() {
 	.pipe(gulp.dest(config.scripts.output))
 })
 
+gulp.task("build:dataBase", function() {
+	return browserify("./src/scripts/productsDatabase.js")
+	.bundle()
+	.pipe(source("productsDatabase.js"))
+	.pipe(buffer())
+	.pipe(uglify())
+	.pipe(gulp.dest("./build/js"))
+})
+
 gulp.task("watch", function() {
 	gulp.watch(config.images.watch, ["images"])
 	gulp.watch(config.scripts.watch, ["build:js"])
@@ -104,12 +113,6 @@ gulp.task("inline-mujeres-tac", function() {
 	.pipe(gulp.dest("./dist"));
 })
 
-gulp.task("inline-032", function() {
-	gulp.src("./build/032.html")
-	.pipe(smoosher())
-	.pipe(gulp.dest("./dist"));
-})
-
 gulp.task("inline-servicio", function() {
 	gulp.src("./build/servicio.html")
 	.pipe(smoosher())
@@ -128,6 +131,6 @@ gulp.task("inline-trabajo", function() {
 	.pipe(gulp.dest("./dist"));
 })
 
-gulp.task("build", ["build:css", "build:js", "build:slides", "images", "inline-home", "inline-mujeres", "inline-mujeres-tac", "inline-032", "inline-empresa", "inline-servicio", "inline-trabajo"]);
+gulp.task("build", ["build:css", "build:js", "build:slides", "build:dataBase", "images", "inline-home", "inline-mujeres", "inline-mujeres-tac", "inline-empresa", "inline-servicio", "inline-trabajo"]);
 
 gulp.task("default", ["server", "watch", "build"]);
