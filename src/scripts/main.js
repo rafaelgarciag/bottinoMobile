@@ -90,4 +90,12 @@ $(function () {
 
 			ga('create', 'UA-79744708-1', 'auto');
 			ga('send', 'pageview');
+	//Cambiar imágenes de home al hacer hover
+	$('#woman-img').hover(function() {
+		/* Stuff to do when the mouse enters the element */
+		$('#woman-img').find('source').attr('srcset', 'img/logocopain.png');
+	}, function() {
+		/* Stuff to do when the mouse leaves the element */
+		$('#woman-img').find('source').attr('srcset', 'img/nino.jpg');
+	});
 }())
