@@ -12,30 +12,37 @@
 	<!-- endsmoosh -->
 </head>
 <body oncontextmenu='return false' onkeydown='return false'>
-	<article class="product slide-view">
+	<article class="product gallery">
 		<a id="closeButton" href="#" class="product-close"><h1>X</h1></a>
-		<section class="product-images">
-			<div class="product-images-item">
+		<section class="product-images gallery-images">
+			<div class="product-images-item gallery-images-item">
 				<picture id='itemView1'>
-					<source id='desktopView' media="(min-width: 1124px)" srcset="img/027.png">
+					<source id='desktopView' media="(min-width: 1124px)" srcset="img/030.png">
 					<source id='tabletView' media="(min-width: 768px)" srcset="img/030.png">
 					<img  id='mobileView' src="img/030.png">
 				</picture>
-			</div>
-			<div class="product-images-item">
 				<picture id='itemView2'>
 					<source id='desktopView' media="(min-width: 1124px)" srcset="img/027.png">
-					<source id='tabletView' media="(min-width: 768px)" srcset="img/030.png">
-					<img  id='mobileView' src="img/026.png">
-				</picture>
-			</div>
-			<div class="product-images-item">
-				<picture id='itemView3'>
-					<source id='desktopView' media="(min-width: 1124px)" srcset="img/026.png">
-					<source id='tabletView' media="(min-width: 768px)" srcset="img/030.png">
+					<source id='tabletView' media="(min-width: 768px)" srcset="img/027.png">
 					<img  id='mobileView' src="img/027.png">
 				</picture>
+				<picture id='itemView3'>
+					<source id='desktopView' media="(min-width: 1124px)" srcset="img/026.png">
+					<source id='tabletView' media="(min-width: 768px)" srcset="img/026.png">
+					<img  id='mobileView' src="img/026.png">
+				</picture>
+				<picture id='itemView4'>
+					<source id='desktopiew' media="(min-width: 1124px)" srcset="img/logocopain.png">
+					<source id='tabletView' media="(min-width: 768px)" srcset="img/logocopain.png">
+					<img  id='mobileView' src="img/logocopain.png">
+				</picture>
 			</div>
+			<div class="product-images-control">
+					<a href="#" class="product-images-control" id='selector1'></a>
+					<a href="#" class="product-images-control" id='selector2'></a>
+					<a href="#" class="product-images-control" id='selector3'></a>
+					<a href="#" class="product-images-control" id='selector4'></a>
+				</div>
 		</section>	
 			<div class="product-images-item">
 				<div class="product-images-item-info">
@@ -295,35 +302,6 @@
 	<script src= "./js/bundle.js"></script>
 	<script src= "./js/productsDatabase.js"></script>
 	<script src= "./js/slides.js"></script>
-	<script type="text/javascript">
-		$(function(){
-			if($(window).width()<2000){
-				$(".slides-product").slidesjs({
-				    height: 700,
-				    play: {
-				      active: false,
-				        // [boolean] Generate the play and stop buttons.
-				        // You cannot use your own buttons. Sorry.
-				      effect: "fade",
-				        // [string] Can be either "slide" or "fade".
-				      interval: 4000,
-				        // [number] Time spent on each slide in milliseconds.
-				      auto: false,
-				        // [boolean] Start playing the slideshow on load.
-				      swap: true,
-				        // [boolean] show/hide stop and play buttons
-				      pauseOnHover: false,
-				        // [boolean] pause a playing slideshow on hover
-				      restartDelay: 2500
-				        // [number] restart delay on inactive slideshow
-			    	}
-			  	});
-		  	}
-			else {
-				$('.slides').removeClass('slides');
-			}
-		});
-	</script>
 	<!-- endsmoosh -->
 </body>
 </html>	

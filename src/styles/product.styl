@@ -20,6 +20,7 @@
 			flex-wrap wrap
 			align-items center
 			justify-content space-between
+			transition all linear 500ms
 			img
 				width 100%
 			&-link
@@ -35,6 +36,20 @@
 			&-marketcar
 				width 10%
 				margin 2%
+		&-control
+			width 100%
+			text-align center
+			font-size 1rem
+			a
+				text-decoration none
+				border 3px solid black
+				border-radius 20px
+				padding 0 1%
+				margin 0 2%
+			a:hover
+				background-color red
+			a:focus
+				background-color blue
 	&-description
 		margin 5% 2%
 		&-title
@@ -43,6 +58,22 @@
 			font-family 'Roboto Slab', serif
 			font-size 0.7rem
 			text-align justify
+.gallery
+	display none
+	background-color rgba(206, 206, 206, 0.96)
+	&-images-item
+		position relative
+		height 320px
+		picture
+			position absolute
+			transition all linear 500ms
+			max-height 70vh
+			width 100%
+			img
+				max-height 70vh
+
+#itemView2, #itemView3, #itemView4
+	display none
 			
 @media (min-width 668px)
 	.product
@@ -57,3 +88,8 @@
 						font-size 2rem
 				&-marketcar
 					width 10%
+	.gallery
+		width 50%
+		padding 0 25%
+		&-images-item
+			height 600px
