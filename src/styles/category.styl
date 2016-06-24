@@ -31,28 +31,57 @@
 					font-size 1.5rem
 			&-marketcar
 				width 15%
+	&-social
+		padding 10% 0
+		width 100%
+		margin 0 auto
+		display flex
+		justify-content center
+		&-icon
+			-webkit-filter grayscale(1)
+		&-icon:hover
+			-webkit-filter none
+		img
+			width 70%
 				
 
 @media (min-width 668px)
 	.category
+		display flex
+		flex-wrap wrap
 		&-button
 			display flex
-			width 89%
-			order 2
-			justify-content space-between
+			width 100%
+			order 1
+			justify-content center
 			align-items center
 			picture
 				margin 0 3px
 				img
 					border none
 		&-images
+			display flex
+			flex-wrap wrap
+			width 85%
+			order 3
 			&-item
 				justify-content space-between
+				width 18%
 				&-info
 					width 55%
 					&-material
-						font-size 2rem
+						font-size 1rem
 					&-price
-						font-size 2rem
+						font-size 1.5rem
 				&-marketcar
-					width 10%
+					width 15%
+		&-social
+			width 10%
+			padding 0
+			margin 0
+			order 2
+			flex-direction column
+			text-align center
+			img
+				width 30%
+				padding 4% 0

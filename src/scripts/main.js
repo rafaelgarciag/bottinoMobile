@@ -70,17 +70,9 @@ $(function () {
 	if($(window).width() > 768) {
 		$(".content").find(".loader").remove();
 	}
-
-	$('#032').click(function() {
-		$('.product').css({
-			display: 'block'
-		});
-		$('#desktopView').attr('srcset', 'img/logocopain.png');
-		$('#tabletView').attr('srcset', 'img/mujer.png');
-		$('#mobileView').attr('src', 'img/carro-.png');
-		$('.product-images-item-info-material').text('some text');
-		$('.product-images-item-info-price').text('$200.000');
-		$('.product-description-paragraf').text();
+	//Activar el Lazy Loader
+	$(function() {
+    	$("img").lazyload({placeholder : "img/grey.gif", threshold : 100, effect : "fadeIn"});
 	});
 	//Script de Google Analytics
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
