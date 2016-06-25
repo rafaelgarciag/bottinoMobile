@@ -4,10 +4,15 @@
 	z-index 3
 	&-close
 		text-decoration none
+		display flex
+		justify-content flex-end
+		margin-left 70%
+		margin-top 5%
+		width 30%
 		h1
 			text-align end
 			margin 0 2%
-			font-size 3rem
+			font-size 1rem
 			font-family verdana
 			color black
 	&-images
@@ -39,17 +44,16 @@
 		&-control
 			width 100%
 			text-align center
-			font-size 1rem
+			font-size 1.5rem
+			color black
+			font-weight 700
 			a
 				text-decoration none
-				border 3px solid black
-				border-radius 20px
-				padding 0 1%
 				margin 0 2%
 			a:hover
-				background-color red
+				color white
 			a:focus
-				background-color blue
+				color white
 	&-description
 		margin 5% 2%
 		&-title
@@ -70,7 +74,7 @@
 			max-height 70vh
 			width 100%
 			img
-				max-height 70vh
+				height 320px
 
 #itemView2, #itemView3, #itemView4
 	display none
@@ -87,9 +91,12 @@
 					&-price
 						font-size 2rem
 				&-marketcar
-					width 10%
+					width 7%
 	.gallery
 		width 50%
 		padding 0 25%
 		&-images-item
-			height 600px
+			height 500px
+			picture
+				img
+					height 500px
