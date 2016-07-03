@@ -9,10 +9,9 @@ $(function () {
 	$("#buttonNav").click(function (event) {
 		event.stopPropagation();
 		$("#menuShow").toggleClass("header-nav-list--show");
-		$
 		$("#productsList").removeClass("header-nav-list-item-subnav-show");
 		$("#companyList").removeClass("header-nav-list-item-subnav2-show");
-		$('img', this).toggle();
+		//$('img', this).toggle(); Cambia el botón del menú al click
 	});
 	//Mostrar el submenú al click
 	$("#productNav").click(function (event) {
@@ -34,6 +33,16 @@ $(function () {
 		.val();
 		$('.header-interaction-mobile-choice-finder-box').focus();
 	})
+	//No mostrar lso botones de búsqueda ni de carro de compras
+	$('.product-images-item-marketcar').css({
+		display: 'none'
+	});
+	$('.category-images-item-marketcar').css({
+		display: 'none'
+	});
+	$('#findBox').css({
+		display: 'none'
+	});
 
 	//Cambiar la disposición de las imágenes dependiendo del tamaño del dispositivo
 	if($(window).width() > 550 && $(window).width() < 1200) {
@@ -88,6 +97,6 @@ $(function () {
 		$('#woman-img').find('source').attr('srcset', 'img/logocopain.png');
 	}, function() {
 		/* Stuff to do when the mouse leaves the element */
-		$('#woman-img').find('source').attr('srcset', 'img/nino.jpg');
+		$('#woman-img').find('source').attr('srcset', 'img/hombre.jpg');
 	});
 }())
