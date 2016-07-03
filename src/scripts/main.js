@@ -92,11 +92,25 @@ $(function () {
 			ga('create', 'UA-79744708-1', 'auto');
 			ga('send', 'pageview');
 	//Cambiar imágenes de home al hacer hover
-	$('#woman-img').hover(function() {
+	$('#man-img').hover(function() {
 		/* Stuff to do when the mouse enters the element */
-		$('#woman-img').find('source').attr('srcset', 'img/logocopain.png');
+		$('#man-img').find('source').attr('srcset', 'img/hombres.jpg');
 	}, function() {
 		/* Stuff to do when the mouse leaves the element */
-		$('#woman-img').find('source').attr('srcset', 'img/hombre.jpg');
+		$('#man-img').find('source').attr('srcset', 'img/hombre-mobile.jpg');
+	});
+	$('#woman-img').hover(function() {
+		/* Stuff to do when the mouse enters the element */
+		$('#woman-img').find('source').attr('srcset', 'img/mujeres.jpg');
+	}, function() {
+		/* Stuff to do when the mouse leaves the element */
+		$('#woman-img').find('source').attr('srcset', 'img/mujer-mobile.jpg');
+	});
+	$('#accesories-img').hover(function() {
+		/* Stuff to do when the mouse enters the element */
+		$('#accesories-img').find('source').attr('srcset', 'img/accesorios.jpg');
+	}, function() {
+		/* Stuff to do when the mouse leaves the element */
+		$('#accesories-img').find('source').attr('srcset', 'img/accesorios-mobile.jpg');
 	});
 }())
