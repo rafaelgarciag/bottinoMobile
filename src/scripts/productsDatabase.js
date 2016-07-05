@@ -10,7 +10,7 @@ $(function () {
 	});
 	//Cambiar las fotos de la galería con el click
 	$('#selector1').click(function() {
-		$('.gallery-images-item').fadeOut('400', function() {	
+		$('.gallery-images-item').fadeOut('fast', function() {	
 			$('#itemView1').css({
 				display: 'block'
 			});
@@ -20,10 +20,10 @@ $(function () {
 			$('#itemView3').css({
 				display: 'none'
 			});
-		}).fadeIn('400');
+		}).fadeIn('fast');
 	});
 	$('#selector2').click(function() {
-		$('.gallery-images-item').fadeOut('400', function() {	
+		$('.gallery-images-item').fadeOut('fast', function() {	
 			$('#itemView1').css({
 				display: 'none'
 			});
@@ -33,10 +33,10 @@ $(function () {
 			$('#itemView3').css({
 				display: 'none'
 			});
-		}).fadeIn('400');
+		}).fadeIn('fast');
 	});
 	$('#selector3').click(function() {
-		$('.gallery-images-item').fadeOut('400', function() {	
+		$('.gallery-images-item').fadeOut('fast', function() {	
 			$('#itemView1').css({
 				display: 'none'
 			})
@@ -46,6 +46,6 @@ $(function () {
 			$('#itemView3').css({
 				display: 'block'
 			});
-		}).fadeIn('400');
+		}).fadeIn('fast');
 	});
 }())

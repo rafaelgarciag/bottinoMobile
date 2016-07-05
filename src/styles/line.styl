@@ -2,10 +2,11 @@
 	padding 0 3px
 	&-title
 		margin 3% 0
-		background linear-gradient(to right, white, #3E3A3A, white)
-		border-radius 20px
+		/*background linear-gradient(to right, white, #3E3A3A, white)*/
+		background-color #A7A2A2
 		display inline-block
-		width 80%
+		width 100%
+		text-align center
 	&-button
 		padding 0 3px
 		picture
@@ -15,10 +16,11 @@
 				height 120px
 	&-title-category
 		margin 3% 0
-		background linear-gradient(to right, white, #3E3A3A, white)
-		border-radius 20px
+		/*background linear-gradient(to right, white, #3E3A3A, white)*/
+		background-color #A7A2A2	
 		display inline-block
-		width 80%
+		width 100%
+		text-align center
 	&-button-category
 		padding 0 3px
 		picture
@@ -72,7 +74,7 @@
 				padding 2% 3%
 	&-companyImage
 		display inline-block
-		background-color black
+		text-align center
 		img
 			width 100%
 	&-copain
@@ -102,28 +104,34 @@
 		&-button-category
 			display flex
 			flex-wrap wrap
-			width 60%
+			width 80%
 			order 3
-			justify-content center
+			justify-content space-between
 			padding 0
 			picture
-				margin 0 1% 1% 1%
-				width 40%
+				order 2
+				margin 1% 0 2% 0
+				width 30%
 				img
 					border none
 					width 100%
 					height 100%
 		&-title
 			width 100%
+			background linear-gradient(to right, #A7A2A2, white)
 			margin 0 45% 0 15%
-		&-title-category
-			margin 0
-			background linear-gradient(to right, white, #3E3A3A, white)
-			border-radius 20px
-			width 30%
-			order 2
 			font-size 2.5rem
 			max-height 50px
+			text-align start
+		&-title-category
+			order 1
+			margin 0
+			background linear-gradient(to right, #A7A2A2, white, white, white)
+			width 100%
+			order 1
+			font-size 2.5rem
+			max-height 50px
+			text-align start
 		&-paragraf
 			width 40%
 			order 2
@@ -132,6 +140,9 @@
 			width 40%
 			order 3
 			margin 0
+			text-align center
+			img
+				width 50%
 		&-social
 			width 10%
 			order 1
@@ -139,3 +150,11 @@
 		&-companyImage
 			width 40%
 			order 3
+			img
+				width 80%
+		&-copain
+			display inline-block
+			padding-top 8%
+			text-align end
+			img
+				width 30%
