@@ -70,38 +70,33 @@
 			</ul>
 		</nav>
 	</header>
-	<article class="content">
-		<div class="loader"></div>
-		<section class="content-images slides">
-			<a href="mujeres.html" id='woman-img' class="content-images-category">
-				<picture>
-					<source media="(min-width: 1024px)" srcset="img/mujer-mobile.jpg">
-					<source media="(min-width: 768px)" srcset="img/mujer-mobile.jpg">
-					<img src="img/mujer-mobile.jpg">
-				</picture>
-			</a>
-			<a href="bolsos.html" id='accesories-img' class="content-images-category">
-				<picture>
-					<source media="(min-width: 1024px)" srcset="img/bolsos-mobile.jpg">
-					<source media="(min-width: 768px)" srcset="img/bolsos-mobile.jpg">
-					<img src="img/bolsos-mobile.jpg">
-				</picture>
-			</a>
-			<a href="hombres.html" id='man-img' class="content-images-category">
-				<picture>
-					<source media="(min-width: 1024px)" srcset="img/hombre-mobile.jpg">
-					<source media="(min-width: 768px)" srcset="img/hombre-mobile.jpg">
-					<img src="img/hombre-mobile.jpg">
-				</picture>
-			</a>
-		</section>
-		<section class="content-news">
-			<video controls src="video/dog.mp4" poster="../img/030.png" class="content-news-first"></video>
-			<img src="img/mujer.jpg" alt="copainNews" title="copainNews" class="content-news-second">
-			<img src="img/mujer.jpg" alt="copainNews" title="copainNews" class="content-news-third">
-		</section>
-		<section class="content-maps">
-			<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1wo6ziWIvTVDOJxstQc05XJW7osY" class="content-maps-control" height="480"></iframe>
+	<article class="line">
+		<section class="line-button-category">
+			<h1 class="line-title-category">Bolsos</h1>
+			<picture>
+			</picture>
+			<picture>
+				<source media="(min-width: 1024px)" srcset="img/boton-carteras.jpg">
+				<source media="(min-width: 768px)" srcset="img/boton-carteras.jpg">
+				<a href="tacones.html"><img src="img/boton-carteras.jpg"></a>
+			</picture>
+			<picture>
+				<source media="(min-width: 1024px)" srcset="img/boton-manoslibres.jpg">
+				<source media="(min-width: 768px)" srcset="img/boton-manoslibres.jpg">
+				<a href="baleta.html"><img src="img/boton-manoslibres.jpg"></a>
+			</picture>
+			<picture>
+			</picture>
+			<picture>
+				<source media="(min-width: 1024px)" srcset="img/boton-morrales.jpg">
+				<source media="(min-width: 768px)" srcset="img/boton-morrales.jpg">
+				<a href="casual.html"><img src="img/boton-morrales.jpg"></a>
+			</picture>
+			<picture>
+				<source media="(min-width: 1024px)" srcset="img/boton-clutch.jpg">
+				<source media="(min-width: 768px)" srcset="img/boton-clutch.jpg">
+				<a href="botin.html"><img src="img/boton-clutch.jpg"></a>
+			</picture>
 		</section>
 		<section class="content-social">
 			<a class="content-social-icon" href="http://facebook.com/bottinobz" target="_blank"><img src="img/facebook.png"></a>
@@ -116,37 +111,7 @@
 	<!-- smoosh -->
 	<script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
 	<script src= "./js/jquery.lazyload.min.js"></script>
-	<script src= "./js/slides.js"></script>
 	<script src= "./js/bundle.js"></script>
-	<script type="text/javascript">
-		$(function(){
-			if($(window).width()<768){
-				$(".slides").slidesjs({
-				    play: {
-				      active: true,
-				        // [boolean] Generate the play and stop buttons.
-				        // You cannot use your own buttons. Sorry.
-				      effect: "slide",
-				        // [string] Can be either "slide" or "fade".
-				      interval: 4000,
-				        // [number] Time spent on each slide in milliseconds.
-				      auto: true,
-				        // [boolean] Start playing the slideshow on load.
-				      swap: true,
-				        // [boolean] show/hide stop and play buttons
-				      pauseOnHover: false,
-				        // [boolean] pause a playing slideshow on hover
-				      restartDelay: 2500
-				        // [number] restart delay on inactive slideshow
-					}
-				 });
-			$(".content").find(".loader").remove();
-			}
-			else {
-				$('.slides').removeClass('slides');
-			}
-		});
-	</script>
 	<!-- endsmoosh -->
 </body>
 </html>	

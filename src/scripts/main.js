@@ -108,9 +108,9 @@ $(function () {
 	});
 	$('#accesories-img').hover(function() {
 		/* Stuff to do when the mouse enters the element */
-		$('#accesories-img').find('source').attr('srcset', 'img/accesorios.jpg');
+		$('#accesories-img').find('source').attr('srcset', 'img/bolsos.jpg');
 	}, function() {
 		/* Stuff to do when the mouse leaves the element */
-		$('#accesories-img').find('source').attr('srcset', 'img/accesorios-mobile.jpg');
+		$('#accesories-img').find('source').attr('srcset', 'img/bolsos-mobile.jpg');
 	});
 }())
