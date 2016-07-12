@@ -9,6 +9,8 @@
 		margin-left 70%
 		margin-top 5%
 		width 30%
+		position fixed
+		z-index 20
 		h1
 			text-align end
 			margin 0 2%
@@ -31,13 +33,17 @@
 			&-link
 				background-color #c3c3c3
 			&-info
-				width 70%
+				width 100%
 				margin 0 2%
 				&-material
 					margin 0 auto
 					font-size 1.1rem
+				&-color
+					margin 0 auto
+					font-size 1.1rem
 				&-price
 					font-size 1.5rem
+					margin-bottom 2%
 			&-marketcar
 				width 10%
 				margin 2%
@@ -55,7 +61,7 @@
 			a:focus
 				color #A7A2A2
 	&-description
-		margin 0 2%
+		margin 2%
 		width 100%
 		&-title
 			font-size 1.2em
@@ -66,31 +72,44 @@
 .gallery
 	width 100%
 	display none
-	background-color rgba(255, 255, 255, 0.88)
+	background-color #FFF
 	&-images-item
 		position relative
-		height 130vh
 		picture
-			position absolute
 			transition all linear 500ms
-			max-height 70vh
 			width 100%
-#itemView2, #itemView34 #itemView4
-	display none
-			
+			padding 5% 0			
 @media (min-width 668px)
 	.product
+		&-close
+			position fixed
+			top -40px
+			margin-left 40%
+			margin-top 5%
+			h1
+				font-size 1.5rem
 		&-images
 			&-item
 				justify-content space-between
 				&-info
 					width 100% /*Con carro de compras el widht es 55%*/
 					&-material
-						font-size 2rem
+						font-size 1.5rem
+					&-color
+						font-size 1.5rem
 					&-price
 						font-size 2rem
 				&-marketcar
 					width 7%
+		&-description
+			margin 2%
+			width 100%
+			&-title
+				font-size 1.8em
+			&-paragraf
+				font-family 'Roboto Slab', serif
+				font-size 1rem
+				text-align justify
 	.gallery
 		width 50%
 		padding 0 25%

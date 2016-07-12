@@ -73,6 +73,16 @@ $(function () {
 		        $("#menuButton1").attr("src", "img/menu1+.png");
 		        $("#finder").attr("src", "img/lupa+.png");
 				}
+			if (y >= 140) {
+				$('#closeButton').css({
+					top: '60px'
+				});
+			}
+			else {
+				$('#closeButton').css({
+					top: '0px'
+				});	
+			}
 		});
 	}
 	//Quitar el loader cuando es un dispositivo grande
@@ -113,4 +123,6 @@ $(function () {
 		/* Stuff to do when the mouse leaves the element */
 		$('#accesories-img').find('source').attr('srcset', 'img/bolsos-mobile.jpg');
 	});
+	$('#032').click(function() {$('.product').css({display: 'block'}); $('.gallery').css({display: 'block'}); $('#desktopView').attr('srcset', 'img/0001.jpg'); $('#tabletView').attr('srcset', 'img/0001.jpg'); $('#mobileView').attr('src', 'img/0001.jpg'); $('#desktopView2').attr('srcset', 'img/0002.jpg'); $('#tabletView2').attr('srcset', 'img/0002.jpg'); $('#mobileView2').attr('src', 'img/0002.jpg'); $('#desktopView3').attr('srcset', 'img/0003.jpg'); $('#tabletView3').attr('srcset', 'img/0003.jpg'); $('#mobileView3').attr('src', 'img/0003.jpg'); $('.product-images-item-info-material').text('Material: Cuero'); $('.product-images-item-info-price').text('Tacón 400PR'); $('.product-description-paragraf').text();$('#selector1').click();});
+	$('#033').click(function() {$('.product').css({display: 'block'}); $('.gallery').css({display: 'block'}); $('#desktopView').attr('srcset', 'img/0005.jpg'); $('#tabletView').attr('srcset', 'img/0005.jpg'); $('#mobileView').attr('src', 'img/0005.jpg'); $('#desktopView2').attr('srcset', 'img/0006.jpg'); $('#tabletView2').attr('srcset', 'img/0006.jpg'); $('#mobileView2').attr('src', 'img/0006.jpg'); $('#desktopView3').attr('srcset', 'img/0007.jpg'); $('#tabletView3').attr('srcset', 'img/0007.jpg'); $('#mobileView3').attr('src', 'img/0007.jpg'); $('.product-images-item-info-material').text('Material: Cuero'); $('.product-images-item-info-price').text('Tacón 400PR'); $('.product-description-paragraf').text();$('#selector1').click();});
 }())
