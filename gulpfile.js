@@ -119,6 +119,12 @@ gulp.task("inline-baleta", function() {
 	.pipe(gulp.dest("../../deploy-bottino"));
 })
 
+gulp.task("inline-bolsos", function() {
+	gulp.src("./build/bolsos.html")
+	.pipe(smoosher())
+	.pipe(gulp.dest("../../deploy-bottino"));
+})
+
 gulp.task("inline-botas", function() {
 	gulp.src("./build/botas.html")
 	.pipe(smoosher())
@@ -133,6 +139,36 @@ gulp.task("inline-botin", function() {
 
 gulp.task("inline-casual", function() {
 	gulp.src("./build/casual.html")
+	.pipe(smoosher())
+	.pipe(gulp.dest("../../deploy-bottino"));
+})
+
+gulp.task("inline-carteras", function() {
+	gulp.src("./build/carteras.html")
+	.pipe(smoosher())
+	.pipe(gulp.dest("../../deploy-bottino"));
+})
+
+gulp.task("inline-clutch", function() {
+	gulp.src("./build/clutch.html")
+	.pipe(smoosher())
+	.pipe(gulp.dest("../../deploy-bottino"));
+})
+
+gulp.task("inline-hombres", function() {
+	gulp.src("./build/hombres.html")
+	.pipe(smoosher())
+	.pipe(gulp.dest("../../deploy-bottino"));
+})
+
+gulp.task("inline-mlibres", function() {
+	gulp.src("./build/mlibres.html")
+	.pipe(smoosher())
+	.pipe(gulp.dest("../../deploy-bottino"));
+})
+
+gulp.task("inline-morral", function() {
+	gulp.src("./build/morral.html")
 	.pipe(smoosher())
 	.pipe(gulp.dest("../../deploy-bottino"));
 })
@@ -155,6 +191,6 @@ gulp.task("inline-trabajo", function() {
 	.pipe(gulp.dest("../../deploy-bottino"));
 })
 
-gulp.task("build", ["build:css", "build:js", "build:slides", "build:dataBase", "images", "inline-home", "inline-mujeres", "inline-tacones", "inline-baleta", "inline-botas", "inline-botin", "inline-casual", "inline-empresa", "inline-servicio", "inline-trabajo"]);
+gulp.task("build", ["build:css", "build:js", "build:slides", "build:dataBase", "images", "inline-baleta", "inline-bolsos", "inline-botas", "inline-botin", "inline-carteras", "inline-casual", "inline-clutch", "inline-empresa", "inline-hombres", "inline-home", "inline-mlibres", "inline-morral", "inline-mujeres", "inline-servicio", "inline-tacones", "inline-trabajo"]);
 
 gulp.task("default", ["server", "watch", "build"]);
