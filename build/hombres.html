@@ -38,9 +38,12 @@
 				</picture>
 			</div>
 			<div class="product-images-item-info">
-				<h3 class="product-images-item-info-price">Un Zapato más</h3>
+				<div class="product-images-item-info-description">
+					<h3 class="product-images-item-info-description-name">Un Zapato más</h3>
+					<h3 class="product-images-item-info-description-price">$100.000</h3>
+				</div>
 				<p class="product-images-item-info-material">Material: Sintético</p>
-				<p class="product-images-item-info-color">Colores: Negro, Miel, Tabaco y Gris</p>
+				<p class="product-images-item-info-color">Colores Disponibles: Negro, Miel, Tabaco y Gris</p>
 			</div>
 			<div class="product-images-item-marketcar">
 				<a href="#"><img src="img/carro+.png"></a>
@@ -48,7 +51,7 @@
 		</section>
 		<div class="product-description">
 			<h1 class="product-description-title">Realiza tu pedido</h1>
-			<p class="product-description-paragraf">Diligencia el siguiente formulario y solicita tus bottino.<a href="index.html#distributors">click acá</a>.</p>
+			<p class="product-description-paragraf">Diligencia el siguiente formulario y solicita tus bottino. Si tienes problemas al hacer tu pedido comúnicaque con nuestro <a href="servicio.html">servicio al cliente</a> o conoce tu distribuidor más cercano dando <a href="servicio.html#distributors">click acá</a>.</p>
 		</div>
 		<section><!-- Begin MailChimp Signup Form -->
 			<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
@@ -59,12 +62,14 @@
 			</style>
 			<div id="mc_embed_signup">
 			<form action="//bottino.us14.list-manage.com/subscribe/post?u=b15c2469977c97220abfb107e&amp;id=b7bf3cb458" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-			    <div id="mc_embed_signup_scroll">
+			    <div id="mc_embed_signup_scroll" style="display: flex; flex-wrap: wrap; justify-content: space-between; width: 96%;">
 				
-			<div class="indicates-required"><span class="asterisk">*</span> indica que es obligatorio</div>
-			<div class="mc-field-group size1of2">
-				<label for="mce-MODELO">Modelo  <span class="asterisk">*</span>
+			<div class="indicates-required" style="width:100%;"><span class="asterisk">*</span> indica que es obligatorio</div>
+			<div class="mc-field-group">
+				<label for="mce-MODELO">Modelo  
+				<span class="asterisk">*</span>
 				</label>
+				<label for="" class="gallery-recomendation"> (Selecciona el modelo descrito en la parte de arriba)</label>
 				<select name="MODELO" class="required" id="mce-MODELO">
 					<option value=""></option>
 					<option value="Tacones 1012">Tacones 1012</option>
@@ -119,9 +124,12 @@
 					<option value="Hombres Boat 4010">Hombres Boat 4010</option>
 				</select>
 			</div>
-			<div class="mc-field-group size1of2">
-				<label for="mce-COLOR">Color </label>
-				<select name="COLOR" class="" id="mce-COLOR">
+			<div class="mc-field-group" style="width:40%;">
+				<label for="mce-COLOR">Color
+					<span class="asterisk">*</span>
+				</label>
+				<label for="" class="gallery-recomendation"> (Ten en cuenta los colores disponibles)</label>
+				<select name="COLOR" class="required" id="mce-COLOR">
 					<option value=""></option>
 					<option value="Negro">Negro</option>
 					<option value="Tabaco">Tabaco</option>
@@ -133,10 +141,11 @@
 					<option value="Baleta">Baleta</option>
 				</select>
 			</div>
-			<div class="mc-field-group size1of2">
+			<div class="mc-field-group" style="width:40%; margin-right: 4%;">
 				<label for="mce-TALLA">Talla
 					<span class="asterisk">*</span>
 				</label>
+				<label for="" class="gallery-recomendation"> (Ten en cuenta las tallas disponibles)</label>
 				<select name="TALLA" class="required" id="mce-TALLA">
 					<option value=""></option>
 					<option value="34">34</option>
@@ -147,12 +156,6 @@
 					<option value="39">39</option>
 					<option value="40">40</option>
 				</select>
-			</div>
-			<div class="mc-field-group size1of2">
-				<label for="mce-CANTIDAD">Cantidad
-					<span class="asterisk">*</span>
-				</label>
-				<input type="number" name="CANTIDAD" class="required" value="" id="mce-CANTIDAD">
 			</div>
 			<div class="mc-field-group">
 				<label for="mce-NOMBRE">Nombre  <span class="asterisk">*</span>
@@ -169,7 +172,7 @@
 				</label>
 				<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
 			</div>
-			<div class="mc-field-group size1of2">
+			<div class="mc-field-group">
 				<label for="mce-PHONENUMB">Teléfono de contacto  <span class="asterisk">*</span>
 				</label>
 				<input type="text" name="PHONENUMB" class="required" value="" id="mce-PHONENUMB">
@@ -189,7 +192,7 @@
 					<input type="text" value="" maxlength="40" name="DIRECCION[city]" id="mce-DIRECCION-city" class="required">
 				</div>
 				<div class="mc-field-group size1of2">
-				    <label for="mce-DIRECCION-state">Estado/Departamento/Region</label>
+				    <label for="mce-DIRECCION-state">Estado/Departamento</label>
 					<input type="text" value="" maxlength="20" name="DIRECCION[state]" id="mce-DIRECCION-state" class="required">
 					</div>
 				<div class="mc-field-group size1of2">
@@ -315,7 +318,8 @@
 					</picture>
 				</a>
 				<div class="category-images-item-info">
-					<h3 class="category-images-item-info-price">Derby 0134</h3>
+					<h3 class="category-images-item-info-name">Derby 0134</h3>
+					<p class="category-images-item-info-material">Material: Sintético</p>
 				</div>
 				<div class="category-images-item-marketcar">
 					<a href="#"><img src="img/carro+.png"></a>
@@ -330,7 +334,8 @@
 					</picture>
 				</a>
 				<div class="category-images-item-info">
-					<h3 class="category-images-item-info-price">Botines 0137</h3>
+					<h3 class="category-images-item-info-name">Botines 0137</h3>
+					<p class="category-images-item-info-material">Material: Sintético</p>
 				</div>
 				<div class="category-images-item-marketcar">
 					<a href="#"><img src="img/carro+.png"></a>
@@ -345,7 +350,8 @@
 					</picture>
 				</a>
 				<div class="category-images-item-info">
-					<h3 class="category-images-item-info-price">Derby 0140</h3>
+					<h3 class="category-images-item-info-name">Derby 0140</h3>
+					<p class="category-images-item-info-material">Material: Sintético</p>
 				</div>
 				<div class="category-images-item-marketcar">
 					<a href="#"><img src="img/carro+.png"></a>
@@ -360,7 +366,8 @@
 					</picture>
 				</a>
 				<div class="category-images-item-info">
-					<h3 class="category-images-item-info-price">Boat 4010</h3>
+					<h3 class="category-images-item-info-name">Boat 4010</h3>
+					<p class="category-images-item-info-material">Material: Sintético</p>
 				</div>
 				<div class="category-images-item-marketcar">
 					<a href="#"><img src="img/carro+.png"></a>

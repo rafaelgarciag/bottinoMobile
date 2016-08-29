@@ -41,9 +41,16 @@
 				&-color
 					margin 0 auto
 					font-size 1.1rem
-				&-price
-					font-size 1.5rem
-					margin-bottom 2%
+				&-description
+					display flex
+					flex-wrap wrap
+					justify-content space-between
+					&-price
+						font-size 1.5rem
+						margin-bottom 2%
+					&-name
+						font-size 1.5rem
+						margin-bottom 2%
 			&-marketcar
 				width 10%
 				margin 2%
@@ -68,7 +75,8 @@
 			font-family 'Roboto Slab', serif
 			font-size 0.7rem
 			text-align justify
-			padding-bottom 20%
+.product-form
+		background-color gray
 .gallery
 	width 100%
 	/*display none*/
@@ -78,7 +86,9 @@
 		picture
 			transition all linear 500ms
 			width 100%
-			padding 5% 0			
+			padding 5% 0
+	&-recomendation
+		font-size 0.5rem			
 @media (min-width 668px)
 	.product
 		&-close

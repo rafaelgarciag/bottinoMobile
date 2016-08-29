@@ -123,11 +123,12 @@ $(function () {
 		/* Stuff to do when the mouse leaves the element */
 		$('#accesories-img').find('source').attr('srcset', 'img/bolsos-mobile.jpg');
 	});
-	//<!--Start of Zopim Live Chat Script-->
-		window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
-		d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
-		_.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
-		$.src="//v2.zopim.com/?46wVbzYRkjCvanNyIy6gncgEj9hLreRL";z.t=+new Date;$.
-		type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
-	//<!--End of Zopim Live Chat Script-->
+	// //<!--Start of Zopim Live Chat Script-->
+	// 	window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+	// 	d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+	// 	_.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
+	// 	$.src="//v2.zopim.com/?46wVbzYRkjCvanNyIy6gncgEj9hLreRL";z.t=+new Date;$.
+	// 	type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
+	// //<!--End of Zopim Live Chat Script-->
+	$('#0134').click(function() {$('.product').css({display: 'block'}); $('.gallery').css({display: 'block'}); $('#desktopView').attr('srcset', 'img/0134.jpg'); $('#tabletView').attr('srcset', 'img/0134.jpg'); $('#mobileView').attr('src', 'img/0134.jpg'); $('#desktopView2').attr('srcset', 'img/0134-1.jpg'); $('#tabletView2').attr('srcset', 'img/0134-1.jpg'); $('#mobileView2').attr('src', 'img/0134-1.jpg'); $('#desktopView3').attr('srcset', 'img/0134-2.jpg'); $('#tabletView3').attr('srcset', 'img/0134-2.jpg'); $('#mobileView3').attr('src', 'img/0134-2.jpg'); $('.product-images-item-info-material').text('Material: Cuero'); $('.product-images-item-info-description-name').text('Derby 0134'); $('.product-images-item-info-description-price').text('$80.000'); $('.product-images-item-info-color').text('Colores: Negro, tabaco, Café.');$('#selector1').click();});
 }())
