@@ -11,7 +11,7 @@
 	<link rel="stylesheet" href="./css/main2.css">
 	<!-- endsmoosh -->
 </head>
-<body oncontextmenu='return false' onkeydown='return false'>
+<body oncontextmenu='return false'>
 	<article class="product gallery">
 		<a id="closeButton" href="#" class="product-close"><h1>Cerrar [x]</h1></a>
 		<div class="product-images-control">
@@ -178,32 +178,20 @@
 				</label>
 				<input type="text" name="PHONENUMB" class="required" value="" id="mce-PHONENUMB">
 			</div>
-			<div class="mc-address-group">
-				<div class="mc-field-group">
-				    <label for="mce-DIRECCION-addr1">Dirección de Entrega  <span class="asterisk">*</span>
-					</label>
-					<input type="text" value="" maxlength="70" name="DIRECCION[addr1]" id="mce-DIRECCION-addr1" class="required">
-				</div>
-				<div class="mc-field-group">
-				    <label for="mce-DIRECCION-addr2">Dirección de Entrega 2</label>
-					<input type="text" value="" maxlength="70" name="DIRECCION[addr2]" id="mce-DIRECCION-addr2">		
-				</div>
-				<div class="mc-field-group size1of2">
-				    <label for="mce-DIRECCION-city">Ciudad</label>
-					<input type="text" value="" maxlength="40" name="DIRECCION[city]" id="mce-DIRECCION-city" class="required">
-				</div>
-				<div class="mc-field-group size1of2">
-				    <label for="mce-DIRECCION-state">Estado/Departamento</label>
-					<input type="text" value="" maxlength="20" name="DIRECCION[state]" id="mce-DIRECCION-state" class="required">
-					</div>
-				<div class="mc-field-group size1of2">
-				    <label for="mce-DIRECCION-zip">Postal / Código Zip</label>
-					<input type="text" value="" maxlength="10" name="DIRECCION[zip]" id="mce-DIRECCION-zip">
-				</div>
-				<div class="mc-field-group size1of2">
-				    <label for="mce-DIRECCION-country">País</label>
-					<select name="DIRECCION[country]" id="mce-DIRECCION-country" class="required"><option value="37" selected>Colombia</option></select>
-				</div>
+			<div class="mc-field-group">
+				<label for="mce-DIRECCION">Dirección de Entrega  <span class="asterisk">*</span>
+				</label>
+				<input type="text" value="" name="DIRECCION" class="required" id="mce-DIRECCION">
+			</div>
+			<div class="mc-field-group size1of2">
+				<label for="mce-CITY">Ciudad  <span class="asterisk">*</span>
+				</label>
+				<input type="text" value="" name="CITY" class="required" id="mce-CITY">
+			</div>
+			<div class="mc-field-group size1of2">
+				<label for="mce-STATE">Estado/Departamento  <span class="asterisk">*</span>
+				</label>
+				<input type="text" value="" name="STATE" class="required" id="mce-STATE">
 			</div>
 			<div class="mc-field-group input-group">
 			    <strong>Validación </strong>
@@ -219,7 +207,7 @@
 			    </div>
 			</form>
 			</div>
-			<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[3]='MODELO';ftypes[3]='dropdown';fnames[5]='COLOR';ftypes[5]='dropdown';fnames[4]='TALLA';ftypes[4]='dropdown';fnames[6]='CANTIDAD';ftypes[6]='number';fnames[1]='NOMBRE';ftypes[1]='text';fnames[2]='APELLIDO';ftypes[2]='text';fnames[0]='EMAIL';ftypes[0]='email';fnames[7]='PHONENUMB';ftypes[7]='phone';fnames[8]='DIRECCION';ftypes[8]='address'; /*
+			<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[3]='MODELO';ftypes[3]='dropdown';fnames[5]='COLOR';ftypes[5]='dropdown';fnames[4]='TALLA';ftypes[4]='dropdown';fnames[6]='CANTIDAD';ftypes[6]='number';fnames[1]='NOMBRE';ftypes[1]='text';fnames[2]='APELLIDO';ftypes[2]='text';fnames[0]='EMAIL';ftypes[0]='email';fnames[7]='PHONENUMB';ftypes[7]='phone';fnames[8]='DIRECCION';ftypes[8]='text'; /*
 			 * Translated default messages for the $ validation plugin.
 			 * Locale: ES
 			 */
@@ -246,7 +234,26 @@
 		</section>
 		<div class="product-description">
 			<h1 class="product-description-title">¿Ya realizaste tu pedido?</h1><a name="pay"></a>
-			<p class="product-description-paragraf">Realiza tu pago de forma segura por medio de la plataforma Pay-U, recuerda que bottino.com.co no almacena ninguno de tus datos financieros, tan pronto como tu pago sea acreditado realizaremos el despacho de tus Bottino. </p>
+			<p class="product-description-paragraf">Realiza tu pago de forma segura por medio de la plataforma Pay-U, recuerda que bottino.com.co no almacena ninguno de tus datos financieros, tan pronto como tu pago sea acreditado realizaremos el despacho de tus Bottino. </p>			
+		</div>
+		<div class="product-paybutton">
+			<form method="post" target="_blank" action="https://gateway.payulatam.com/ppp-web-gateway/pb.zul" accept-charset="UTF-8">
+				<input type="image" border="0" alt="" src="http://www.payulatam.com/img-secure-2015/boton_pagar_mediano.png" onClick="this.form.urlOrigen.value = window.location.href;"/>
+				<input name="buttonId" type="hidden" value="9xHs/0id/lPlxDiZmfDuXr4kICHDs02tSN3FkeuFaEpFSYo+cdFwxw=="/>
+				<input name="merchantId" type="hidden" value="575053"/>
+				<input name="accountId" type="hidden" value="577846"/>
+				<input name="description" type="hidden" value="Bottino Sintético"/>
+				<input name="referenceCode" type="hidden" value="SyntMen"/>
+				<input name="amount" type="hidden" value="80000"/>
+				<input name="tax" type="hidden" value="0"/>
+				<input name="taxReturnBase" type="hidden" value="0"/>
+				<input name="shipmentValue" value="0" type="hidden"/>
+				<input name="currency" type="hidden" value="COP"/>
+				<input name="lng" type="hidden" value="es"/>
+				<input name="sourceUrl" id="urlOrigen" value="" type="hidden"/>
+				<input name="buttonType" value="SIMPLE" type="hidden"/>
+				<input name="signature" value="adf1777bf89f56e1797c8ac88eb38a8f6ede44a55c03536c502378ecdd785c08" type="hidden"/>
+			</form>
 		</div>
 	</article> 
 	<header class="header">
