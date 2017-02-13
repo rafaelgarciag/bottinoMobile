@@ -130,7 +130,28 @@ $(function () {
 	// 	$.src="//v2.zopim.com/?46wVbzYRkjCvanNyIy6gncgEj9hLreRL";z.t=+new Date;$.
 	// 	type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 	// //<!--End of Zopim Live Chat Script-->
-	$('#0134').click(function() {$('.product').css({display: 'block'}); $('.gallery').css({display: 'block'}); $('#desktopView').attr('srcset', 'img/0134.jpg'); $('#tabletView').attr('srcset', 'img/0134.jpg'); $('#mobileView').attr('src', 'img/0134.jpg'); $('#desktopView2').attr('srcset', 'img/0134-1.jpg'); $('#tabletView2').attr('srcset', 'img/0134-1.jpg'); $('#mobileView2').attr('src', 'img/0134-1.jpg'); $('#desktopView3').attr('srcset', 'img/0134-2.jpg'); $('#tabletView3').attr('srcset', 'img/0134-2.jpg'); $('#mobileView3').attr('src', 'img/0134-2.jpg'); $('.product-images-item-info-material').text('Material: Cuero'); $('.product-images-item-info-description-name').text('Derby 0134'); $('.product-images-item-info-description-price').text('$80.000'); $('.product-images-item-info-color').text('Colores: Negro, tabaco, Café.');$('#selector1').click();});
-	$('#TC027').click(function() {$('.product').css({display: 'block'}); $('.gallery').css({display: 'block'}); $('#desktopView').attr('srcset', 'img/TC1012.jpg'); $('#tabletView').attr('srcset', 'img/TC1012.jpg'); $('#mobileView').attr('src', 'img/TC1012.jpg'); $('#desktopView2').attr('srcset', 'img/TC1012-1.jpg'); $('#tabletView2').attr('srcset', 'img/TC1012-1.jpg'); $('#mobileView2').attr('src', 'img/TC1012-1.jpg'); $('#desktopView3').attr('srcset', 'img/TC1012-2.jpg'); $('#tabletView3').attr('srcset', 'img/TC1012-2.jpg'); $('#mobileView3').attr('src', 'img/TC1012-2.jpg'); $('.product-images-item-info-material').text('Charol'); $('.product-images-item-info-price').text('$80.000');$('#selector1').click();});
+	$('#TC027').click(function() {$('.product').css({display: 'block'}); $('.gallery').css({display: 'block'}); $('#desktopView').attr('srcset', 'img/TC027_RO.jpg'); $('#tabletView').attr('srcset', 'img/TC027_RO.jpg'); $('#mobileView').attr('src', 'img/TC027_RO.jpg'); $('#desktopView2').attr('srcset', 'img/TC027_RO_1.jpg'); $('#tabletView2').attr('srcset', 'img/TC027_RO_1.jpg'); $('#mobileView2').attr('src', 'img/TC027_RO_1.jpg'); $('#desktopView3').attr('srcset', 'img/TC027_RO_2.jpg'); $('#tabletView3').attr('srcset', 'img/TC027_RO_2.jpg'); $('#mobileView3').attr('src', 'img/TC027_RO_2.jpg'); $('.product-images-item-info-price').text('$987.756'); $('.product-images-item-info-material').text('Microfibration');$('.product-images-item-info-name').text('TC027');$('#color1').addClass('product-images-item-info-available-colorbox-negro');$('#color1').text('NE');$('#size1').addClass('product-images-item-info-size');$('#size1').text('40-41-42-43-44-45');$('#color2').addClass('product-images-item-info-available-colorbox-negro');$('#color2').text('NE');$('#size2').addClass('product-images-item-info-size');$('#size2').text('40-41-42-43-44-45');$('#color3').addClass('product-images-item-info-available-colorbox-negro');$('#color3').text('NE');$('#size3').addClass('product-images-item-info-size');$('#size3').text('40-41-42-43-44-45');$('#color4').addClass('product-images-item-info-available-colorbox-negro');$('#color4').text('NE');$('#size4').addClass('product-images-item-info-size');$('#size4').text('40-41-42-43-44-45');});
 	$('#BTN046').click(function() {$('.product').css({display: 'block'}); $('.gallery').css({display: 'block'}); $('#desktopView').attr('srcset', 'img/BTN046_VI.jpg'); $('#tabletView').attr('srcset', 'img/BTN046_VI.jpg'); $('#mobileView').attr('src', 'img/BTN046_VI.jpg'); $('#desktopView2').attr('srcset', 'img/BTN046_VI_1.jpg'); $('#tabletView2').attr('srcset', 'img/BTN046_VI_1.jpg'); $('#mobileView2').attr('src', 'img/BTN046_VI_1.jpg'); $('#desktopView3').attr('srcset', 'img/BTN046_VI_2.jpg'); $('#tabletView3').attr('srcset', 'img/BTN046_VI_2.jpg'); $('#mobileView3').attr('src', 'img/BTN046_VI_2.jpg'); $('.product-images-item-info-price').text('$123.456'); $('.product-images-item-info-material').text('Cuero Cuerina');$('.product-images-item-info-name').text('BTN046');});
+	$('#TC030').click(function() {$('.product').css({display: 'block'}); $('.gallery').css({display: 'block'}); $('#desktopView').attr('srcset', 'img/BTN046_VI.jpg'); $('#tabletView').attr('srcset', 'img/BTN046_VI.jpg'); $('#mobileView').attr('src', 'img/BTN046_VI.jpg'); $('#desktopView2').attr('srcset', 'img/BTN046_VI_1.jpg'); $('#tabletView2').attr('srcset', 'img/BTN046_VI_1.jpg'); $('#mobileView2').attr('src', 'img/BTN046_VI_1.jpg'); $('#desktopView3').attr('srcset', 'img/BTN046_VI_2.jpg'); $('#tabletView3').attr('srcset', 'img/BTN046_VI_2.jpg'); $('#mobileView3').attr('src', 'img/BTN046_VI_2.jpg'); $('.product-images-item-info-price').text('$123.456'); $('.product-images-item-info-material').text('Cuero Cuerina');$('.product-images-item-info-name').text('BTN046');});
+	$('#closeButton').click(function() {
+		$('.product').css({
+			display: 'none'
+		});
+		$('#color1').removeClass();
+		$('#color1').text('');
+		$('#size1').removeClass();
+		$('#size1').text('Producto no disponible. ').append('<a href="servicio.html">Más Info</a>');
+		$('#color2').removeClass();
+		$('#color2').text('');
+		$('#size2').removeClass();
+		$('#size2').text('');
+		$('#color3').removeClass();
+		$('#color3').text('');
+		$('#size3').removeClass();
+		$('#size3').text('');
+		$('#color4').removeClass();
+		$('#color4').text('');
+		$('#size4').removeClass();
+		$('#size4').text('');
+	});
 }())
