@@ -123,7 +123,7 @@ $(function () {
 		/* Stuff to do when the mouse leaves the element */
 		$('#accesories-img').find('source').attr('srcset', 'img/bolsos-mobile.jpg');
 	});
-	// //<!--Start of Zopim Live Chat Script-->
+	// // //<!--Start of Zopim Live Chat Script-->
 	// 	window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
 	// 	d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
 	// 	_.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
