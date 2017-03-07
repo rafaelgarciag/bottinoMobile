@@ -14,11 +14,6 @@
 <body oncontextmenu='return false' onkeydown='return false'>
 	<article class="product gallery">
 		<a id="closeButton" href="#" class="product-close"><h1>Cerrar [x]</h1></a>
-		<div class="product-images-control">
-			<a href="#" class="product-images-control" id='selector1'>1</a>
-			<a href="#" class="product-images-control" id='selector2'>2</a>
-			<a href="#" class="product-images-control" id='selector3'>3</a>
-		</div>
 		<section class="product-images gallery-images">
 			<div class="product-images-item gallery-images-item">
 				<picture id='itemView1'>
@@ -41,27 +36,11 @@
 				<h3 class="product-images-item-info-price">El precio Correcto</h3>
 				<p class="product-images-item-info-material">Único</p>
 				<p class="product-images-item-info-name">TC001</p>
-				<div class="product-images-item-info-available">Colores y Números Disponibles:
+				<div class="product-images-item-info-available">Tallas Disponibles:
 					<div class="product-images-item-info-available-colorbox">
-						<div id="color1"></div>
 						<div id="size1"">Producto no disponible. <a href="servicio.html">Más Info</a> </div>
 					</div>
-					<div class="product-images-item-info-available-colorbox">
-						<div id="color2"></div>
-						<div id="size2"></div>
-					</div>
-					<div class="product-images-item-info-available-colorbox">
-						<div id="color3"></div>
-						<div id="size3"></div>
-					</div>
-					<div class="product-images-item-info-available-colorbox">
-						<div id="color4"></div>
-						<div id="size4"></div>
-					</div>
 				</div>
-			</div>
-			<div class="product-images-item-marketcar">
-				<a href="#"><img src="img/carro+.png"></a>
 			</div>
 		</section>
 		<div class="product-description">
@@ -92,7 +71,7 @@
 			</p>
 			<p class="product-description-list-step">O si lo prefieres puedes acercarte a nuestros distribuidores autorizados para adquirir tus Bottino, conócelos haciendo <a href="servicio.html#distributors">click acá</a>.</p>
 		</div>
-	</article> 
+	</article>
 	<header class="header">
 		<article class="header-interaction">
 			<a class= "header-interaction-logo" href="index.html"><img src="img/bottino+.png" class="header-interaction-logo"></a>
@@ -165,6 +144,44 @@
 			</picture>
 		</section>
 		<section class="category-images">
+			<div class="category-images-item" id="BT418">
+				<img src="img/BT418_TA.jpg">
+				<div class="category-images-item-info">
+					<div class="category-images-item-info-text">
+						<h3 class="category-images-item-info-price">$85.000</h3>
+						<p class="category-images-item-info-material">Sintético</p>
+					</div>
+					<a href="#" class="category-images-item-more">
+					<img src="img/lupa+.png">
+					<p class="category-images-item-more-text">Ampliar</p>
+				</a>
+				</div>
+				<div class="category-images-buybutton">
+					<form method="post" action="https://gateway.payulatam.com/ppp-web-gateway/pb.zul" accept-charset="UTF-8">
+					  <input type="image" border="0" alt="" src="https://pbs.twimg.com/media/C5n-wZYXMAASkoK.png:large" onClick="this.form.urlOrigen.value = window.location.href;"/>
+					  <input name="buttonId" type="hidden" value="jVI4rwUK119u2574bfaQnjTFp8lET2FnuxvbhO9AtH9iPF0K67YG9w=="/>
+					  <input name="merchantId" type="hidden" value="575053"/>
+					  <input name="accountId" type="hidden" value="577846"/>
+					  <input name="description" type="hidden" value="Bota Sintético Tabaco"/>
+					  <input name="referenceCode" type="hidden" value="BT418TA"/>
+					  <input name="amount" type="hidden" value="85000"/>
+					  <input name="tax" type="hidden" value="0"/>
+					  <input name="taxReturnBase" type="hidden" value="0"/>
+					  <input name="shipmentValue" value="0" type="hidden"/>
+					  <input name="currency" type="hidden" value="COP"/>
+					  <input name="lng" type="hidden" value="es"/>
+					  <input name="approvedResponseUrl" type="hidden" value="http://www.bottino.com.co/success"/>
+					  <input name="declinedResponseUrl" type="hidden" value="http://www.bottino.com.co/reject"/>
+					  <input name="pendingResponseUrl" type="hidden" value="http://www.bottino.com.co/pending"/>
+					  <input name="displayShippingInformation" type="hidden" value="YES"/>
+					  <input name="displayBuyerComments" type="hidden" value="true"/>
+					  <input name="buyerCommentsLabel" type="hidden" value="es:Por favor ingresa la talla que necesitas.|en:Please enter the size that you need."/>
+					  <input name="sourceUrl" id="urlOrigen" value="" type="hidden"/>
+					  <input name="buttonType" value="SIMPLE" type="hidden"/>
+					  <input name="signature" value="960d147e62d09edcf207a1ea4a1d55fe337bd41d55c2bd0e47c032066c729dc7" type="hidden"/>
+					</form>
+				</div>
+			</div>
 			<div class="category-images-item" id="BT808">
 				<img src="img/BT808_NE.jpg">
 				<div class="category-images-item-info">
@@ -216,29 +233,7 @@
 				</a>
 				</div>
 				<div class="category-images-buybutton">
-					<form method="post" action="https://gateway.payulatam.com/ppp-web-gateway/pb.zul" accept-charset="UTF-8">
-					  <input type="image" border="0" alt="" src="https://pbs.twimg.com/media/C5n-wZYXMAASkoK.png:large" onClick="this.form.urlOrigen.value = window.location.href;"/>
-					  <input name="buttonId" type="hidden" value="yIXScSvtk4kRE6Uf1RfXLPdx5P54cJtQiLTIdw5u9J02BSME/Ra02Q=="/>
-					  <input name="merchantId" type="hidden" value="575053"/>
-					  <input name="accountId" type="hidden" value="577846"/>
-					  <input name="description" type="hidden" value="Bota Sintético 6 cms"/>
-					  <input name="referenceCode" type="hidden" value="BT812"/>
-					  <input name="amount" type="hidden" value="85000"/>
-					  <input name="tax" type="hidden" value="0"/>
-					  <input name="taxReturnBase" type="hidden" value="0"/>
-					  <input name="shipmentValue" value="0" type="hidden"/>
-					  <input name="currency" type="hidden" value="COP"/>
-					  <input name="lng" type="hidden" value="es"/>
-					  <input name="approvedResponseUrl" type="hidden" value="http://www.bottino.com.co/success"/>
-					  <input name="declinedResponseUrl" type="hidden" value="http://www.bottino.com.co/reject"/>
-					  <input name="pendingResponseUrl" type="hidden" value="http://www.bottino.com.co/pending"/>
-					  <input name="displayShippingInformation" type="hidden" value="YES"/>
-					  <input name="displayBuyerComments" type="hidden" value="true"/>
-					  <input name="buyerCommentsLabel" type="hidden" value="es:Por favor ingresa el color y la talla que necesitas.|en:Please enter the color and size that you need."/>
-					  <input name="sourceUrl" id="urlOrigen" value="" type="hidden"/>
-					  <input name="buttonType" value="SIMPLE" type="hidden"/>
-					  <input name="signature" value="ebe29b4d3dfee119f7834a6681584d3ba701cc6eaa2277530cf2e8cef724dba0" type="hidden"/>
-					</form>
+					<a href="soldout.html"><input type="image" border="0" alt="" src="https://pbs.twimg.com/media/C5n-wZYXMAASkoK.png:large"/></a>
 				</div>
 			</div>
 			<div class="category-images-item" id="BT816">
@@ -276,44 +271,6 @@
 					  <input name="sourceUrl" id="urlOrigen" value="" type="hidden"/>
 					  <input name="buttonType" value="SIMPLE" type="hidden"/>
 					  <input name="signature" value="8979bdcf4a42a59d8257936a72b94d875713121a58c348a70e40894538a1a942" type="hidden"/>
-					</form>
-				</div>
-			</div>
-			<div class="category-images-item" id="BT1002">
-				<img src="img/BT1002_NE.jpg">
-				<div class="category-images-item-info">
-					<div class="category-images-item-info-text">
-						<h3 class="category-images-item-info-price">$75.000</h3>
-						<p class="category-images-item-info-material">Sintético</p>
-					</div>
-					<a href="#" class="category-images-item-more">
-					<img src="img/lupa+.png">
-					<p class="category-images-item-more-text">Ampliar</p>
-				</a>
-				</div>
-				<div class="category-images-buybutton">
-					<form method="post" action="https://gateway.payulatam.com/ppp-web-gateway/pb.zul" accept-charset="UTF-8">
-					  <input type="image" border="0" alt="" src="https://pbs.twimg.com/media/C5n-wZYXMAASkoK.png:large" onClick="this.form.urlOrigen.value = window.location.href;"/>
-					  <input name="buttonId" type="hidden" value="81VvfNAKy16MC1cY3ZR/z3xyYJKnPS0xAn2ZaPeDwBhP3fPpoSYq/Q=="/>
-					  <input name="merchantId" type="hidden" value="575053"/>
-					  <input name="accountId" type="hidden" value="577846"/>
-					  <input name="description" type="hidden" value="Bota Sintético 3 cms"/>
-					  <input name="referenceCode" type="hidden" value="BT1002"/>
-					  <input name="amount" type="hidden" value="75000"/>
-					  <input name="tax" type="hidden" value="0"/>
-					  <input name="taxReturnBase" type="hidden" value="0"/>
-					  <input name="shipmentValue" value="0" type="hidden"/>
-					  <input name="currency" type="hidden" value="COP"/>
-					  <input name="lng" type="hidden" value="es"/>
-					  <input name="approvedResponseUrl" type="hidden" value="http://www.bottino.com.co/success"/>
-					  <input name="declinedResponseUrl" type="hidden" value="http://www.bottino.com.co/reject"/>
-					  <input name="pendingResponseUrl" type="hidden" value="http://www.bottino.com.co/pending"/>
-					  <input name="displayShippingInformation" type="hidden" value="YES"/>
-					  <input name="displayBuyerComments" type="hidden" value="true"/>
-					  <input name="buyerCommentsLabel" type="hidden" value="es:Por favor ingresa el color y la talla que necesitas.|en:Please enter the color and size that you need."/>
-					  <input name="sourceUrl" id="urlOrigen" value="" type="hidden"/>
-					  <input name="buttonType" value="SIMPLE" type="hidden"/>
-					  <input name="signature" value="7902df8fd80c3ca3d190bcf09993e97e2bc612ecd8b88bb3b33b267a3690b292" type="hidden"/>
 					</form>
 				</div>
 			</div>
@@ -355,7 +312,7 @@
 					</form>
 				</div>
 			</div>
-			<div class="category-images-item" id="BTEXLAR">
+			<div class="category-images-item" id="BTEXLARTA">
 				<img src="img/BTEXLAR_T.jpg">
 				<div class="category-images-item-info">
 					<div class="category-images-item-info-text">
@@ -370,26 +327,56 @@
 				<div class="category-images-buybutton">
 					<form method="post" action="https://gateway.payulatam.com/ppp-web-gateway/pb.zul" accept-charset="UTF-8">
 					  <input type="image" border="0" alt="" src="https://pbs.twimg.com/media/C5n-wZYXMAASkoK.png:large" onClick="this.form.urlOrigen.value = window.location.href;"/>
-					  <input name="buttonId" type="hidden" value="wRQUJkNmA9ehNwgUY1s6PKNS6GO8xt1p24hr3GnugCg2htpW8nOqtw=="/>
+					  <input name="buttonId" type="hidden" value="64/xe+CRx8JTY16Dv9Fm8bu0QBbFkm2YKgFedUtr1Ntmjcu8s+iXVg=="/>
 					  <input name="merchantId" type="hidden" value="575053"/>
 					  <input name="accountId" type="hidden" value="577846"/>
-					  <input name="description" type="hidden" value="Bota Extra Larga Sintético 2 cms"/>
-					  <input name="referenceCode" type="hidden" value="BTEXLAR"/>
-					  <input name="amount" type="hidden" value="85000"/>
-					  <input name="tax" type="hidden" value="0"/>
-					  <input name="taxReturnBase" type="hidden" value="0"/>
-					  <input name="shipmentValue" value="0" type="hidden"/>
+					  <input name="description" type="hidden" value="Bota Extralarga Sintético Tabaco 2 cms"/>
+					  <input name="referenceCode" type="hidden" value="BTEXLARTA"/>
+					  <input name="amount" type="hidden" value="$button.additionalValues.TX_VALUE.value"/>
 					  <input name="currency" type="hidden" value="COP"/>
 					  <input name="lng" type="hidden" value="es"/>
 					  <input name="approvedResponseUrl" type="hidden" value="http://www.bottino.com.co/success"/>
 					  <input name="declinedResponseUrl" type="hidden" value="http://www.bottino.com.co/reject"/>
 					  <input name="pendingResponseUrl" type="hidden" value="http://www.bottino.com.co/pending"/>
-					  <input name="displayShippingInformation" type="hidden" value="YES"/>
 					  <input name="displayBuyerComments" type="hidden" value="true"/>
-					  <input name="buyerCommentsLabel" type="hidden" value="es:Por favor ingresa el color y la talla que necesitas.|en:Please enter the color and size that you need."/>
+					  <input name="buyerCommentsLabel" type="hidden" value="es:Por favor ingresa la talla que necesitas.|en:Please enter the size that you need."/>
 					  <input name="sourceUrl" id="urlOrigen" value="" type="hidden"/>
 					  <input name="buttonType" value="SIMPLE" type="hidden"/>
-					  <input name="signature" value="c28b139efc451859bc44a6d32d982573bc57257f32bcc8819022fde40c580394" type="hidden"/>
+					  <input name="signature" value="4e00b05b78b904f2e44c9a5fa0c2cdd066452799215247fd14654e8a9cf2cb02" type="hidden"/>
+					</form>
+				</div>
+			</div>
+			<div class="category-images-item" id="BTEXLARVI">
+				<img src="img/BTEXLAR_VI.jpg">
+				<div class="category-images-item-info">
+					<div class="category-images-item-info-text">
+						<h3 class="category-images-item-info-price">$85.000</h3>
+						<p class="category-images-item-info-material">Sintético</p>
+					</div>
+					<a href="#" class="category-images-item-more">
+					<img src="img/lupa+.png">
+					<p class="category-images-item-more-text">Ampliar</p>
+				</a>
+				</div>
+				<div class="category-images-buybutton">
+					<form method="post" action="https://gateway.payulatam.com/ppp-web-gateway/pb.zul" accept-charset="UTF-8">
+					  <input type="image" border="0" alt="" src="https://pbs.twimg.com/media/C5n-wZYXMAASkoK.png:large" onClick="this.form.urlOrigen.value = window.location.href;"/>
+					  <input name="buttonId" type="hidden" value="44oG2xo4U4YoOeq+lRVNtzl3bfmFjimHNNyMe5ntmlRycE2Uzy6oOQ=="/>
+					  <input name="merchantId" type="hidden" value="575053"/>
+					  <input name="accountId" type="hidden" value="577846"/>
+					  <input name="description" type="hidden" value="Bota Extralarga Sintético Vinotinto 2 cm"/>
+					  <input name="referenceCode" type="hidden" value="BTEXLARVI"/>
+					  <input name="amount" type="hidden" value="$button.additionalValues.TX_VALUE.value"/>
+					  <input name="currency" type="hidden" value="COP"/>
+					  <input name="lng" type="hidden" value="es"/>
+					  <input name="approvedResponseUrl" type="hidden" value="http://www.bottino.com.co/success"/>
+					  <input name="declinedResponseUrl" type="hidden" value="http://www.bottino.com.co/reject"/>
+					  <input name="pendingResponseUrl" type="hidden" value="http://www.bottino.com.co/pending"/>
+					  <input name="displayBuyerComments" type="hidden" value="true"/>
+					  <input name="buyerCommentsLabel" type="hidden" value="es:Por favor ingresa la talla que necesitas.|en:Please enter the size that you need."/>
+					  <input name="sourceUrl" id="urlOrigen" value="" type="hidden"/>
+					  <input name="buttonType" value="SIMPLE" type="hidden"/>
+					  <input name="signature" value="4b03472e8a487b2c6bf561f99c31b6a99e22b79dcd4870db7010a39732b593cc" type="hidden"/>
 					</form>
 				</div>
 			</div>

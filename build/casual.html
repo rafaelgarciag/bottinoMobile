@@ -14,11 +14,6 @@
 <body oncontextmenu='return false' onkeydown='return false'>
 	<article class="product gallery">
 		<a id="closeButton" href="#" class="product-close"><h1>Cerrar [x]</h1></a>
-		<div class="product-images-control">
-			<a href="#" class="product-images-control" id='selector1'>1</a>
-			<a href="#" class="product-images-control" id='selector2'>2</a>
-			<a href="#" class="product-images-control" id='selector3'>3</a>
-		</div>
 		<section class="product-images gallery-images">
 			<div class="product-images-item gallery-images-item">
 				<picture id='itemView1'>
@@ -41,27 +36,11 @@
 				<h3 class="product-images-item-info-price">El precio Correcto</h3>
 				<p class="product-images-item-info-material">Único</p>
 				<p class="product-images-item-info-name">TC001</p>
-				<div class="product-images-item-info-available">Colores y Números Disponibles:
+				<div class="product-images-item-info-available">Tallas Disponibles:
 					<div class="product-images-item-info-available-colorbox">
-						<div id="color1"></div>
 						<div id="size1"">Producto no disponible. <a href="servicio.html">Más Info</a> </div>
 					</div>
-					<div class="product-images-item-info-available-colorbox">
-						<div id="color2"></div>
-						<div id="size2"></div>
-					</div>
-					<div class="product-images-item-info-available-colorbox">
-						<div id="color3"></div>
-						<div id="size3"></div>
-					</div>
-					<div class="product-images-item-info-available-colorbox">
-						<div id="color4"></div>
-						<div id="size4"></div>
-					</div>
 				</div>
-			</div>
-			<div class="product-images-item-marketcar">
-				<a href="#"><img src="img/carro+.png"></a>
 			</div>
 		</section>
 		<div class="product-description">
@@ -92,7 +71,7 @@
 			</p>
 			<p class="product-description-list-step">O si lo prefieres puedes acercarte a nuestros distribuidores autorizados para adquirir tus Bottino, conócelos haciendo <a href="servicio.html#distributors">click acá</a>.</p>
 		</div>
-	</article> 
+	</article>
 	<header class="header">
 		<article class="header-interaction">
 			<a class= "header-interaction-logo" href="index.html"><img src="img/bottino+.png" class="header-interaction-logo"></a>
@@ -241,8 +220,8 @@
 					</form>
 				</div>
 			</div>
-			<div class="category-images-item" id="CS234">
-				<img src="img/CS234_T_1.jpg">
+			<div class="category-images-item" id="CS234RO">
+				<img src="img/CS234_RO_1.jpg">
 				<div class="category-images-item-info">
 					<div class="category-images-item-info-text">
 						<h3 class="category-images-item-info-price">$56.000</h3>
@@ -256,26 +235,158 @@
 				<div class="category-images-buybutton">
 					<form method="post" action="https://gateway.payulatam.com/ppp-web-gateway/pb.zul" accept-charset="UTF-8">
 					  <input type="image" border="0" alt="" src="https://pbs.twimg.com/media/C5n-wZYXMAASkoK.png:large" onClick="this.form.urlOrigen.value = window.location.href;"/>
-					  <input name="buttonId" type="hidden" value="Midrcf/8ECeNPGTiM9eei2k+qS8k3rJY073aTtm69OALxv6m+ynzZg=="/>
+					  <input name="buttonId" type="hidden" value="30ZEILZLR5kMrrrcNo1vpIXrd59rY5oJ/CzpnsVpyDQsOt80zlg3Eg=="/>
 					  <input name="merchantId" type="hidden" value="575053"/>
 					  <input name="accountId" type="hidden" value="577846"/>
-					  <input name="description" type="hidden" value="Casual Carnaza"/>
-					  <input name="referenceCode" type="hidden" value="CS234"/>
-					  <input name="amount" type="hidden" value="56000"/>
-					  <input name="tax" type="hidden" value="0"/>
-					  <input name="taxReturnBase" type="hidden" value="0"/>
-					  <input name="shipmentValue" value="0" type="hidden"/>
+					  <input name="description" type="hidden" value="Casual Carnaza Rojo"/>
+					  <input name="referenceCode" type="hidden" value="CS234RO"/>
+					  <input name="amount" type="hidden" value="$button.additionalValues.TX_VALUE.value"/>
 					  <input name="currency" type="hidden" value="COP"/>
 					  <input name="lng" type="hidden" value="es"/>
 					  <input name="approvedResponseUrl" type="hidden" value="http://www.bottino.com.co/success"/>
 					  <input name="declinedResponseUrl" type="hidden" value="http://www.bottino.com.co/reject"/>
 					  <input name="pendingResponseUrl" type="hidden" value="http://www.bottino.com.co/pending"/>
-					  <input name="displayShippingInformation" type="hidden" value="YES"/>
 					  <input name="displayBuyerComments" type="hidden" value="true"/>
-					  <input name="buyerCommentsLabel" type="hidden" value="es:Por favor ingresa el color y la talla que necesitas.|en:Please enter the color and size that you need."/>
+					  <input name="buyerCommentsLabel" type="hidden" value="es:Por favor ingresa la talla que necesitas.|en:Please enter the size that you need."/>
 					  <input name="sourceUrl" id="urlOrigen" value="" type="hidden"/>
 					  <input name="buttonType" value="SIMPLE" type="hidden"/>
-					  <input name="signature" value="8c087c98a0a347b5d8b64dee8813f8942eeecefefc264e44e65ddb67549a6802" type="hidden"/>
+					  <input name="signature" value="e19884851fb9f84ba3686f694f3503f53ecd2409e40a19e561c50e46d6a9be64" type="hidden"/>
+					</form>
+				</div>
+			</div>
+			<div class="category-images-item" id="CS234VI">
+				<img src="img/CS234_VI.jpg">
+				<div class="category-images-item-info">
+					<div class="category-images-item-info-text">
+						<h3 class="category-images-item-info-price">$56.000</h3>
+						<p class="category-images-item-info-material">Carnaza</p>
+					</div>
+					<a href="#" class="category-images-item-more">
+					<img src="img/lupa+.png">
+					<p class="category-images-item-more-text">Ampliar</p>
+				</a>
+				</div>
+				<div class="category-images-buybutton">
+					<form method="post" action="https://gateway.payulatam.com/ppp-web-gateway/pb.zul" accept-charset="UTF-8">
+					  <input type="image" border="0" alt="" src="https://pbs.twimg.com/media/C5n-wZYXMAASkoK.png:large" onClick="this.form.urlOrigen.value = window.location.href;"/>
+					  <input name="buttonId" type="hidden" value="zdL98LFe0nubcvhlZHgfaXcpFJX9hQVb8xUl7kl66BRF4eOPrPMG9w=="/>
+					  <input name="merchantId" type="hidden" value="575053"/>
+					  <input name="accountId" type="hidden" value="577846"/>
+					  <input name="description" type="hidden" value="Casual Carnaza Vinotinto"/>
+					  <input name="referenceCode" type="hidden" value="CS234VI"/>
+					  <input name="amount" type="hidden" value="$button.additionalValues.TX_VALUE.value"/>
+					  <input name="currency" type="hidden" value="COP"/>
+					  <input name="lng" type="hidden" value="es"/>
+					  <input name="approvedResponseUrl" type="hidden" value="http://www.bottino.com.co/success"/>
+					  <input name="declinedResponseUrl" type="hidden" value="http://www.bottino.com.co/reject"/>
+					  <input name="pendingResponseUrl" type="hidden" value="http://www.bottino.com.co/pending"/>
+					  <input name="displayBuyerComments" type="hidden" value="true"/>
+					  <input name="buyerCommentsLabel" type="hidden" value="es:Por favor ingresa la talla que necesitas.|en:Please enter the size that you need."/>
+					  <input name="sourceUrl" id="urlOrigen" value="" type="hidden"/>
+					  <input name="buttonType" value="SIMPLE" type="hidden"/>
+					  <input name="signature" value="2737f1c33cb70c5d0c483091ddd2bab5a479903cb0061cb6586bb962f2f7c615" type="hidden"/>
+					</form>
+				</div>
+			</div>
+			<div class="category-images-item" id="CS234AZ">
+				<img src="img/CS234_AZ.jpg">
+				<div class="category-images-item-info">
+					<div class="category-images-item-info-text">
+						<h3 class="category-images-item-info-price">$56.000</h3>
+						<p class="category-images-item-info-material">Carnaza</p>
+					</div>
+					<a href="#" class="category-images-item-more">
+					<img src="img/lupa+.png">
+					<p class="category-images-item-more-text">Ampliar</p>
+				</a>
+				</div>
+				<div class="category-images-buybutton">
+					<form method="post" action="https://gateway.payulatam.com/ppp-web-gateway/pb.zul" accept-charset="UTF-8">
+					  <input type="image" border="0" alt="" src="https://pbs.twimg.com/media/C5n-wZYXMAASkoK.png:large" onClick="this.form.urlOrigen.value = window.location.href;"/>
+					  <input name="buttonId" type="hidden" value="j8fEZk3/vb/uGrDgWmnEEIOHik99Z0xEC4t4qkf/vO18+mnx5Sk55w=="/>
+					  <input name="merchantId" type="hidden" value="575053"/>
+					  <input name="accountId" type="hidden" value="577846"/>
+					  <input name="description" type="hidden" value="Casual Carnaza Café"/>
+					  <input name="referenceCode" type="hidden" value="CS234CF"/>
+					  <input name="amount" type="hidden" value="$button.additionalValues.TX_VALUE.value"/>
+					  <input name="currency" type="hidden" value="COP"/>
+					  <input name="lng" type="hidden" value="es"/>
+					  <input name="approvedResponseUrl" type="hidden" value="http://www.bottino.com.co/success"/>
+					  <input name="declinedResponseUrl" type="hidden" value="http://www.bottino.com.co/reject"/>
+					  <input name="pendingResponseUrl" type="hidden" value="http://www.bottino.com.co/pending"/>
+					  <input name="displayBuyerComments" type="hidden" value="true"/>
+					  <input name="buyerCommentsLabel" type="hidden" value="es:Por favor ingresa la talla que necesitas.|en:Please enter the size that you need."/>
+					  <input name="sourceUrl" id="urlOrigen" value="" type="hidden"/>
+					  <input name="buttonType" value="SIMPLE" type="hidden"/>
+					  <input name="signature" value="3d9c5f20d84f7c86466bf618085347174cbfce3e96f8cbbeb8b498985bc0e070" type="hidden"/>
+					</form>
+				</div>
+			</div>
+			<div class="category-images-item" id="CS234CF">
+				<img src="img/CS234_CF.jpg">
+				<div class="category-images-item-info">
+					<div class="category-images-item-info-text">
+						<h3 class="category-images-item-info-price">$56.000</h3>
+						<p class="category-images-item-info-material">Carnaza</p>
+					</div>
+					<a href="#" class="category-images-item-more">
+					<img src="img/lupa+.png">
+					<p class="category-images-item-more-text">Ampliar</p>
+				</a>
+				</div>
+				<div class="category-images-buybutton">
+					<form method="post" action="https://gateway.payulatam.com/ppp-web-gateway/pb.zul" accept-charset="UTF-8">
+					  <input type="image" border="0" alt="" src="https://pbs.twimg.com/media/C5n-wZYXMAASkoK.png:large" onClick="this.form.urlOrigen.value = window.location.href;"/>
+					  <input name="buttonId" type="hidden" value="j8fEZk3/vb/uGrDgWmnEEIOHik99Z0xEC4t4qkf/vO18+mnx5Sk55w=="/>
+					  <input name="merchantId" type="hidden" value="575053"/>
+					  <input name="accountId" type="hidden" value="577846"/>
+					  <input name="description" type="hidden" value="Casual Carnaza Café"/>
+					  <input name="referenceCode" type="hidden" value="CS234CF"/>
+					  <input name="amount" type="hidden" value="$button.additionalValues.TX_VALUE.value"/>
+					  <input name="currency" type="hidden" value="COP"/>
+					  <input name="lng" type="hidden" value="es"/>
+					  <input name="approvedResponseUrl" type="hidden" value="http://www.bottino.com.co/success"/>
+					  <input name="declinedResponseUrl" type="hidden" value="http://www.bottino.com.co/reject"/>
+					  <input name="pendingResponseUrl" type="hidden" value="http://www.bottino.com.co/pending"/>
+					  <input name="displayBuyerComments" type="hidden" value="true"/>
+					  <input name="buyerCommentsLabel" type="hidden" value="es:Por favor ingresa la talla que necesitas.|en:Please enter the size that you need."/>
+					  <input name="sourceUrl" id="urlOrigen" value="" type="hidden"/>
+					  <input name="buttonType" value="SIMPLE" type="hidden"/>
+					  <input name="signature" value="3d9c5f20d84f7c86466bf618085347174cbfce3e96f8cbbeb8b498985bc0e070" type="hidden"/>
+					</form>
+				</div>
+			</div>
+			<div class="category-images-item" id="CS234NE">
+				<img src="img/CS234_NE_1.jpg">
+				<div class="category-images-item-info">
+					<div class="category-images-item-info-text">
+						<h3 class="category-images-item-info-price">$56.000</h3>
+						<p class="category-images-item-info-material">Carnaza</p>
+					</div>
+					<a href="#" class="category-images-item-more">
+					<img src="img/lupa+.png">
+					<p class="category-images-item-more-text">Ampliar</p>
+				</a>
+				</div>
+				<div class="category-images-buybutton">
+					<form method="post" action="https://gateway.payulatam.com/ppp-web-gateway/pb.zul" accept-charset="UTF-8">
+					  <input type="image" border="0" alt="" src="https://pbs.twimg.com/media/C5n-wZYXMAASkoK.png:large" onClick="this.form.urlOrigen.value = window.location.href;"/>
+					  <input name="buttonId" type="hidden" value="8FTH+p+/9dtQDXfK8FmPnHcZhbnIkxPtcTmJjvsR7Bak6QIVq6EAvQ=="/>
+					  <input name="merchantId" type="hidden" value="575053"/>
+					  <input name="accountId" type="hidden" value="577846"/>
+					  <input name="description" type="hidden" value="Casual Carnaza Negro"/>
+					  <input name="referenceCode" type="hidden" value="CS234NE"/>
+					  <input name="amount" type="hidden" value="$button.additionalValues.TX_VALUE.value"/>
+					  <input name="currency" type="hidden" value="COP"/>
+					  <input name="lng" type="hidden" value="es"/>
+					  <input name="approvedResponseUrl" type="hidden" value="http://www.bottino.com.co/success"/>
+					  <input name="declinedResponseUrl" type="hidden" value="http://www.bottino.com.co/reject"/>
+					  <input name="pendingResponseUrl" type="hidden" value="http://www.bottino.com.co/pending"/>
+					  <input name="displayBuyerComments" type="hidden" value="true"/>
+					  <input name="buyerCommentsLabel" type="hidden" value="es:Por favor ingresa la talla que necesitas.|en:Please enter the size that you need."/>
+					  <input name="sourceUrl" id="urlOrigen" value="" type="hidden"/>
+					  <input name="buttonType" value="SIMPLE" type="hidden"/>
+					  <input name="signature" value="7536aead40bd07e92c3b635b45ec28e522672d2519020429fe607183d1b47a90" type="hidden"/>
 					</form>
 				</div>
 			</div>
