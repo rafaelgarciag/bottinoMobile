@@ -14,11 +14,6 @@
 <body oncontextmenu='return false' onkeydown='return false'>
 	<article class="product gallery">
 		<a id="closeButton" href="#" class="product-close"><h1>Cerrar [x]</h1></a>
-		<div class="product-images-control">
-			<a href="#" class="product-images-control" id='selector1'>1</a>
-			<a href="#" class="product-images-control" id='selector2'>2</a>
-			<a href="#" class="product-images-control" id='selector3'>3</a>
-		</div>
 		<section class="product-images gallery-images">
 			<div class="product-images-item gallery-images-item">
 				<picture id='itemView1'>
@@ -41,27 +36,20 @@
 				<h3 class="product-images-item-info-price">El precio Correcto</h3>
 				<p class="product-images-item-info-material">Único</p>
 				<p class="product-images-item-info-name">TC001</p>
-				<div class="product-images-item-info-available">Colores y Números Disponibles:
+				<div class="product-images-item-info-available">Tallas Disponibles:
 					<div class="product-images-item-info-available-colorbox">
-						<div id="color1"></div>
 						<div id="size1"">Producto no disponible. <a href="servicio.html">Más Info</a> </div>
 					</div>
 					<div class="product-images-item-info-available-colorbox">
-						<div id="color2"></div>
 						<div id="size2"></div>
 					</div>
 					<div class="product-images-item-info-available-colorbox">
-						<div id="color3"></div>
 						<div id="size3"></div>
 					</div>
 					<div class="product-images-item-info-available-colorbox">
-						<div id="color4"></div>
 						<div id="size4"></div>
 					</div>
 				</div>
-			</div>
-			<div class="product-images-item-marketcar">
-				<a href="#"><img src="img/carro+.png"></a>
 			</div>
 		</section>
 		<div class="product-description">
@@ -101,16 +89,6 @@
 					<h3 class="header-interaction-mobile-menu-title" id="buttonNavT">Menú</h3>
 					<button class="header-interaction-mobile-menu-button"><img  id="menuButton" src="img/menu+.png"><img id='menuButton1' style="display: none;" src="img/menu1+.png"></button>
 				</section>
-				<!--<section id="findBox" class="header-interaction-mobile-choice">
-					<form class="header-interaction-mobile-choice-finder">
-						<input type="text" class="header-interaction-mobile-choice-finder-box">
-						<input type="image" id="finder" src="img/lupa+.png" class="header-interaction-mobile-choice-finder-lupa">
-					</form>
-					<a href="#" class="header-interaction-mobile-choice-market">
-						<h4 class="header-interaction-mobile-choice-market-marketbox">01</h4>	
-						<img class="header-interaction-mobile-choice-market-marketcar" src="img/carro+.png">
-					</a>
-				</section>-->
 				<nav class="header-interaction-mobile-nav">
 					<ul class="header-interaction-mobile-nav-list">
 						<li class="header-interaction-mobile-nav-list-item"><a href="#">Productos</a>
@@ -165,7 +143,7 @@
 			</picture>
 		</section>
 		<section class="category-images">
-			<div class="category-images-item" id="TC027">
+			<div class="category-images-item" id="TC027NE">
 				<img src="img/TC027_NE.jpg">
 				<div class="category-images-item-info">
 					<div class="category-images-item-info-text">
@@ -179,31 +157,47 @@
 				</div>
 				<div class="category-images-buybutton">
 					<form method="post" action="https://gateway.payulatam.com/ppp-web-gateway/pb.zul" accept-charset="UTF-8">
-					  <input type="image" border="0" alt="" src="https://pbs.twimg.com/media/C5n-wZYXMAASkoK.png:large" onClick="this.form.urlOrigen.value = window.location.href;"/>
-					  <input name="buttonId" type="hidden" value="0UllN8aEEXTr7b0wnU4/hHtWr0ovS1D6zJPKOUzLtHFF9r7xwKyOOg=="/>
-					  <input name="merchantId" type="hidden" value="575053"/>
-					  <input name="accountId" type="hidden" value="577846"/>
-					  <input name="description" type="hidden" value="Tacón Microfibra 10 cms"/>
-					  <input name="referenceCode" type="hidden" value="TC027"/>
-					  <input name="amount" type="hidden" value="85000"/>
-					  <input name="tax" type="hidden" value="0"/>
-					  <input name="taxReturnBase" type="hidden" value="0"/>
-					  <input name="shipmentValue" value="0" type="hidden"/>
-					  <input name="currency" type="hidden" value="COP"/>
-					  <input name="lng" type="hidden" value="es"/>
-					  <input name="approvedResponseUrl" type="hidden" value="http://www.bottino.com.co/success"/>
-					  <input name="declinedResponseUrl" type="hidden" value="http://www.bottino.com.co/reject"/>
-					  <input name="pendingResponseUrl" type="hidden" value="http://www.bottino.com.co/pending"/>
-					  <input name="displayShippingInformation" type="hidden" value="YES"/>
-					  <input name="displayBuyerComments" type="hidden" value="true"/>
-					  <input name="buyerCommentsLabel" type="hidden" value="es:Por favor ingresa el color y la talla que necesitas.|en:Please enter the color and size that you need."/>
-					  <input name="sourceUrl" id="urlOrigen" value="" type="hidden"/>
-					  <input name="buttonType" value="SIMPLE" type="hidden"/>
-					  <input name="signature" value="c8d0a558b97dc759a7cbea8613dfa4380da6e8703c5ce81975fa64dcdeec70e6" type="hidden"/>
+						  <input type="image" border="0" alt="" src="https://pbs.twimg.com/media/C5n-wZYXMAASkoK.png:large" onClick="this.form.urlOrigen.value = window.location.href;"/>
+						  <input name="buttonId" type="hidden" value="EaiKcU8smdaO+Wws2EiUjacCfbQt8ru90O5PofiTXnILmWE6tF768w=="/>
+						  <input name="merchantId" type="hidden" value="575053"/>
+						  <input name="accountId" type="hidden" value="577846"/>
+						  <input name="description" type="hidden" value="Tacón Microfibra Negro 10 cms"/>
+						  <input name="referenceCode" type="hidden" value="TC027NE"/>
+						  <input name="amount" type="hidden" value="85000"/>
+						  <input name="tax" type="hidden" value="0"/>
+						  <input name="taxReturnBase" type="hidden" value="0"/>
+						  <input name="shipmentValue" value="0" type="hidden"/>
+						  <input name="currency" type="hidden" value="COP"/>
+						  <input name="lng" type="hidden" value="es"/>
+						  <input name="approvedResponseUrl" type="hidden" value="http://www.bottino.com.co/success"/>
+						  <input name="declinedResponseUrl" type="hidden" value="http://www.bottino.com.co/reject"/>
+						  <input name="pendingResponseUrl" type="hidden" value="http://www.bottino.com.co/pending"/>
+						  <input name="displayShippingInformation" type="hidden" value="YES"/>
+						  <input name="displayBuyerComments" type="hidden" value="true"/>
+						  <input name="buyerCommentsLabel" type="hidden" value="es:Por favor ingresa la talla que necesitas.|en:Please enter the size that you need."/>
+						  <input name="sourceUrl" id="urlOrigen" value="" type="hidden"/>
+						  <input name="buttonType" value="SIMPLE" type="hidden"/>
+						  <input name="signature" value="53f314f2921a1710e97d2e4c7887e35fd88bc70a0ce9c8d09cb4669913179966" type="hidden"/>
 					</form>
 				</div>
 			</div>
-			<div class="category-images-item" id="TC030">
+			<div class="category-images-item" id="TC027RO">
+				<img src="img/TC027_RO.jpg">
+				<div class="category-images-item-info">
+					<div class="category-images-item-info-text">
+						<h3 class="category-images-item-info-price">$85.000</h3>
+						<p class="category-images-item-info-material">Microfibra</p>
+					</div>
+					<a href="#" class="category-images-item-more">
+					<img src="img/lupa+.png">
+					<p class="category-images-item-more-text">Ampliar</p>
+				</a>
+				</div>
+				<div class="category-images-buybutton">
+					<a href="soldout.html"><input type="image" border="0" alt="" src="https://pbs.twimg.com/media/C5n-wZYXMAASkoK.png:large"/></a>
+				</div>
+			</div>
+			<div class="category-images-item" id="TC030NE">
 				<img src="img/TC030_NE.jpg">
 				<div class="category-images-item-info">
 					<div class="category-images-item-info-text">
@@ -218,11 +212,11 @@
 				<div class="category-images-buybutton">
 					<form method="post" action="https://gateway.payulatam.com/ppp-web-gateway/pb.zul" accept-charset="UTF-8">
 					  <input type="image" border="0" alt="" src="https://pbs.twimg.com/media/C5n-wZYXMAASkoK.png:large" onClick="this.form.urlOrigen.value = window.location.href;"/>
-					  <input name="buttonId" type="hidden" value="ayY8OW7oYQDY7fWtQM0IebqE0eng6XfCx9s7fMBF76VTIwR/GqUYTw=="/>
+					  <input name="buttonId" type="hidden" value="WtncRULjch7P5LtBGma+10fMRJOD/ADdrKBmJ7sEmgxEyg3JjDP/LA=="/>
 					  <input name="merchantId" type="hidden" value="575053"/>
 					  <input name="accountId" type="hidden" value="577846"/>
-					  <input name="description" type="hidden" value="Tacón Charol 11 cms"/>
-					  <input name="referenceCode" type="hidden" value="TC030"/>
+					  <input name="description" type="hidden" value="Tacón Charol Negro 11 cms"/>
+					  <input name="referenceCode" type="hidden" value="TC030NE"/>
 					  <input name="amount" type="hidden" value="85000"/>
 					  <input name="tax" type="hidden" value="0"/>
 					  <input name="taxReturnBase" type="hidden" value="0"/>
@@ -234,10 +228,48 @@
 					  <input name="pendingResponseUrl" type="hidden" value="http://www.bottino.com.co/pending"/>
 					  <input name="displayShippingInformation" type="hidden" value="YES"/>
 					  <input name="displayBuyerComments" type="hidden" value="true"/>
-					  <input name="buyerCommentsLabel" type="hidden" value="es:Por favor ingresa el color y la talla que necesitas.|en:Please enter the color and size that you need."/>
+					  <input name="buyerCommentsLabel" type="hidden" value="es:Por favor ingresa la talla que necesitas.|en:Please enter the size that you need."/>
 					  <input name="sourceUrl" id="urlOrigen" value="" type="hidden"/>
 					  <input name="buttonType" value="SIMPLE" type="hidden"/>
-					  <input name="signature" value="05fa09b4f89a693b47bcbb36232136722c6ad5e07b9353f1fdb880c5c48d2b5b" type="hidden"/>
+					  <input name="signature" value="c7d0fb0721f0d04e0b47a16600f810c6ff3331a0fc207b6309f64e37c52850ea" type="hidden"/>
+					</form>
+				</div>
+			</div>
+			<div class="category-images-item" id="TC030RO">
+				<img src="img/TC030_RO.jpg">
+				<div class="category-images-item-info">
+					<div class="category-images-item-info-text">
+						<h3 class="category-images-item-info-price">$85.000</h3>
+						<p class="category-images-item-info-material">Charol</p>
+					</div>
+					<a href="#" class="category-images-item-more">
+					<img src="img/lupa+.png">
+					<p class="category-images-item-more-text">Ampliar</p>
+				</a>
+				</div>
+				<div class="category-images-buybutton">
+					<form method="post" action="https://gateway.payulatam.com/ppp-web-gateway/pb.zul" accept-charset="UTF-8">
+					  <input type="image" border="0" alt="" src="https://pbs.twimg.com/media/C5n-wZYXMAASkoK.png:large" onClick="this.form.urlOrigen.value = window.location.href;"/>
+					  <input name="buttonId" type="hidden" value="pFmO0VjoBRNtYdrhJCU9mBkuA1emqVYGq7vjkb2YdwVSF2WybkMt9w=="/>
+					  <input name="merchantId" type="hidden" value="575053"/>
+					  <input name="accountId" type="hidden" value="577846"/>
+					  <input name="description" type="hidden" value="Tacón Charol Rojo 11 cms"/>
+					  <input name="referenceCode" type="hidden" value="TC030RO"/>
+					  <input name="amount" type="hidden" value="85000"/>
+					  <input name="tax" type="hidden" value="0"/>
+					  <input name="taxReturnBase" type="hidden" value="0"/>
+					  <input name="shipmentValue" value="0" type="hidden"/>
+					  <input name="currency" type="hidden" value="COP"/>
+					  <input name="lng" type="hidden" value="es"/>
+					  <input name="approvedResponseUrl" type="hidden" value="http://www.bottino.com.co/success"/>
+					  <input name="declinedResponseUrl" type="hidden" value="http://www.bottino.com.co/reject"/>
+					  <input name="pendingResponseUrl" type="hidden" value="http://www.bottino.com.co/pending"/>
+					  <input name="displayShippingInformation" type="hidden" value="YES"/>
+					  <input name="displayBuyerComments" type="hidden" value="true"/>
+					  <input name="buyerCommentsLabel" type="hidden" value="es:Por favor ingresa la talla que necesitas.|en:Please enter the size that you need."/>
+					  <input name="sourceUrl" id="urlOrigen" value="" type="hidden"/>
+					  <input name="buttonType" value="SIMPLE" type="hidden"/>
+					  <input name="signature" value="0f3dec25bdc6be57e8f9567129e96176e8a5b9d066ecf3de18493600ec3b6e2e" type="hidden"/>
 					</form>
 				</div>
 			</div>
@@ -254,29 +286,7 @@
 				</a>
 				</div>
 				<div class="category-images-buybutton">
-					<form method="post" action="https://gateway.payulatam.com/ppp-web-gateway/pb.zul" accept-charset="UTF-8">
-					  <input type="image" border="0" alt="" src="https://pbs.twimg.com/media/C5n-wZYXMAASkoK.png:large" onClick="this.form.urlOrigen.value = window.location.href;"/>
-					  <input name="buttonId" type="hidden" value="QV1w+fJxh0JWBRknTmqFJjpoUr1zr3utDg3N6cQaCxdMcNLVcKcT5Q=="/>
-					  <input name="merchantId" type="hidden" value="575053"/>
-					  <input name="accountId" type="hidden" value="577846"/>
-					  <input name="description" type="hidden" value="Tacón Sintético 11 cms"/>
-					  <input name="referenceCode" type="hidden" value="TC030PL"/>
-					  <input name="amount" type="hidden" value="85000"/>
-					  <input name="tax" type="hidden" value="0"/>
-					  <input name="taxReturnBase" type="hidden" value="0"/>
-					  <input name="shipmentValue" value="0" type="hidden"/>
-					  <input name="currency" type="hidden" value="COP"/>
-					  <input name="lng" type="hidden" value="es"/>
-					  <input name="approvedResponseUrl" type="hidden" value="http://www.bottino.com.co/success"/>
-					  <input name="declinedResponseUrl" type="hidden" value="http://www.bottino.com.co/reject"/>
-					  <input name="pendingResponseUrl" type="hidden" value="http://www.bottino.com.co/pending"/>
-					  <input name="displayShippingInformation" type="hidden" value="YES"/>
-					  <input name="displayBuyerComments" type="hidden" value="true"/>
-					  <input name="buyerCommentsLabel" type="hidden" value="es:Por favor ingresa el color y la talla que necesitas.|en:Please enter the color and size that you need."/>
-					  <input name="sourceUrl" id="urlOrigen" value="" type="hidden"/>
-					  <input name="buttonType" value="SIMPLE" type="hidden"/>
-					  <input name="signature" value="abbe8f9ccfd6e9582defddef739759c75b66951ddd3a3c44613d7158fa6dd39f" type="hidden"/>
-					</form>
+					<a href="soldout.html"><input type="image" border="0" alt="" src="https://pbs.twimg.com/media/C5n-wZYXMAASkoK.png:large"/></a>
 				</div>
 			</div>
 			<div class="category-images-item" id="TC032">
