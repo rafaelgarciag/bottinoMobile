@@ -123,11 +123,14 @@ $(function () {
 		/* Stuff to do when the mouse leaves the element */
 		$('#accesories-img').find('source').attr('srcset', 'img/bolsos-mobile.jpg');
 	});
-	// // //<!--Start of Zopim Live Chat Script-->
-	// 	window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+	// //<!--Start of Zendesk Chat Script-->
+	// 	window.$zopim||(function(d,s){var z=$zopim=function(c){
+	// 	z._.push(c)},$=z.s=
 	// 	d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
-	// 	_.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
-	// 	$.src="//v2.zopim.com/?46wVbzYRkjCvanNyIy6gncgEj9hLreRL";z.t=+new Date;$.
-	// 	type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
-	// //<!--End of Zopim Live Chat Script-->
+	// 	_.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute('charset','utf-8');
+	// 	$.src='https://v2.zopim.com/?4eFzrHqKImQCXkc8lOu2CeRJ3R5LI3Va';z.t=+new Date;$.
+	// 	type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
+	// //<!--End of Zendesk Chat Script-->
+
+	$('#BM001').click(function() {$('body,html').animate({scrollTop: 0}, 300); $('.product').css({display: 'block'}); $('.gallery').css({display: 'block'}); $('#desktopView').attr('srcset', 'img/BM001.jpg'); $('#tabletView').attr('srcset', 'img/BM001.jpg'); $('#mobileView').attr('src', 'img/BM001.jpg'); $('#desktopView2').attr('srcset', 'img/BM001_1.jpg'); $('#tabletView2').attr('srcset', 'img/BM001_1.jpg'); $('#mobileView2').attr('src', 'img/BM001_1.jpg'); $('#desktopView3').attr('srcset', 'img/'); $('#tabletView3').attr('srcset', 'img/0'); $('#mobileView3').attr('src', 'img/0'); $('.product-images-item-info-price').text('$40.000'); $('.product-images-item-info-material').text('Sintético – Dimensiones: 23x16x12');$('.product-images-item-info-name').text('BM001');$('#size1').addClass('product-images-item-info-size');$('#size1').text('');});
 }())
