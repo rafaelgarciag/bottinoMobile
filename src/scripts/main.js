@@ -132,5 +132,4 @@ $(function () {
 	// 	type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
 	// //<!--End of Zendesk Chat Script-->
 
-	$('#BM001').click(function() {$('body,html').animate({scrollTop: 0}, 300); $('.product').css({display: 'block'}); $('.gallery').css({display: 'block'}); $('#desktopView').attr('srcset', 'img/BM001.jpg'); $('#tabletView').attr('srcset', 'img/BM001.jpg'); $('#mobileView').attr('src', 'img/BM001.jpg'); $('#desktopView2').attr('srcset', 'img/BM001_1.jpg'); $('#tabletView2').attr('srcset', 'img/BM001_1.jpg'); $('#mobileView2').attr('src', 'img/BM001_1.jpg'); $('#desktopView3').attr('srcset', 'img/'); $('#tabletView3').attr('srcset', 'img/0'); $('#mobileView3').attr('src', 'img/0'); $('.product-images-item-info-price').text('$40.000'); $('.product-images-item-info-material').text('Sintético – Dimensiones: 23x16x12');$('.product-images-item-info-name').text('BM001');$('#size1').addClass('product-images-item-info-size');$('#size1').text('');});
 }())
