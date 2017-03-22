@@ -215,12 +215,18 @@ gulp.task("inline-rechazo", function() {
 	.pipe(gulp.dest("../../deploy-bottino"));
 })
 
+gulp.task("inline-soldout", function() {
+	gulp.src("./build/soldout.html")
+	.pipe(smoosher())
+	.pipe(gulp.dest("../../deploy-bottino"));
+})
+
 gulp.task("inline-trabajo", function() {
 	gulp.src("./build/trabajo.html")
 	.pipe(smoosher())
 	.pipe(gulp.dest("../../deploy-bottino"));
 })
 
-gulp.task("build", ["build:css", "build:js", "build:slides", "build:dataBase", "images", "inline-baleta", "inline-bolsos", "inline-botas", "inline-botin", "inline-carteras", "inline-casual", "inline-clutch", "inline-empresa", "inline-hombres", "inline-home", "inline-mlibres", "inline-morral", "inline-mujeres", "inline-servicio", "inline-tacones", "inline-terminos", "inline-demano", "inline-pendiente", "inline-exito", "inline-rechazo", "inline-trabajo"]);
+gulp.task("build", ["build:css", "build:js", "build:slides", "build:dataBase", "images", "inline-baleta", "inline-bolsos", "inline-botas", "inline-botin", "inline-carteras", "inline-casual", "inline-clutch", "inline-empresa", "inline-hombres", "inline-home", "inline-mlibres", "inline-morral", "inline-mujeres", "inline-servicio", "inline-tacones", "inline-terminos", "inline-demano", "inline-pendiente", "inline-exito", "inline-rechazo", "inline-soldout", "inline-trabajo"]);
 
 gulp.task("default", ["server", "watch", "build"]);
