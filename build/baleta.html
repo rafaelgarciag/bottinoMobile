@@ -4,6 +4,10 @@
 	<meta charset="UTF-8">
 	<title>Baletas - Bottino</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=0">
+	<meta name="description" content="Comparte con los tuyos lo mejor de Colombia"/>
+	<meta property="og:title" content="Bottino - Bolsos y Zapatos"/>
+	<meta property="og:image" content="https://instagram.fbog2-2.fna.fbcdn.net/t51.2885-19/s150x150/13395175_1573837756246850_1560191938_a.jpg"/>
+	<meta property="og:description" content="Comparte con los tuyos lo mejor de Colombia"/>
 	<link href='https://fonts.googleapis.com/css?family=Caveat:400,700' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
 	<!-- smoosh -->
@@ -439,7 +443,28 @@
 				</a>
 				</div>
 				<div class="category-images-buybutton">
-					<a href="soldout.html"><input type="image" border="0" alt="" src="https://pbs.twimg.com/media/C5n-wZYXMAADV0u.png:large"/></a>
+					<form method="post" action="https://gateway.payulatam.com/ppp-web-gateway/pb.zul" accept-charset="UTF-8">
+					  <input type="image" border="0" alt="" src="https://pbs.twimg.com/media/C5n-wZYXMAADV0u.png:large" onClick="this.form.urlOrigen.value = window.location.href;"/>
+					  <input name="buttonId" type="hidden" value="UCcOROM4lEaN84J1f141nFpKSMiSsR/SONNUR12nw4XVWfYrGE4Sbw=="/>
+					  <input name="merchantId" type="hidden" value="575053"/>
+					  <input name="accountId" type="hidden" value="577846"/>
+					  <input name="description" type="hidden" value="Baleta Cuero"/>
+					  <input name="referenceCode" type="hidden" value="BL221"/>
+					  <input name="amount" type="hidden" value="80000.00"/>
+					  <input name="tax" type="hidden" value="0.00"/>
+					  <input name="taxReturnBase" type="hidden" value="0.00"/>
+					  <input name="shipmentValue" value="0.00" type="hidden"/>
+					  <input name="currency" type="hidden" value="COP"/>
+					  <input name="lng" type="hidden" value="es"/>
+					  <input name="approvedResponseUrl" type="hidden" value="http://www.bottino.com.co/success"/>
+					  <input name="declinedResponseUrl" type="hidden" value="http://www.bottino.com.co/reject"/>
+					  <input name="pendingResponseUrl" type="hidden" value="http://www.bottino.com.co/pending"/>
+					  <input name="displayBuyerComments" type="hidden" value="true"/>
+					  <input name="buyerCommentsLabel" type="hidden" value="es:Por favor ingresa el color y la talla que necesitas.|en:Please enter the color and size that you need."/>
+					  <input name="sourceUrl" id="urlOrigen" value="" type="hidden"/>
+					  <input name="buttonType" value="SIMPLE" type="hidden"/>
+					  <input name="signature" value="5ac1255104eeb1dc3a9c5b98decc5b53e8d000e32d763f8a45d5a79680f43ab4" type="hidden"/>
+					</form>
 				</div>
 			</div>
 			<div class="category-images-item" id="BL221">
